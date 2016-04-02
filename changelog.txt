@@ -1,3 +1,117 @@
+﻿Version 7 (Alternate Reality)
+-----------------------------
+
+Version 6.1 (Pixelaphobia)
+--------------------------
+
+[fixed] Skip missing plugin executable file
+[fixed] Skip invalid plugin GUID
+[fixed] Only Variable Frame Rate timecode indexing
+
+Version 6.0 (Archangel Descending)
+----------------------------------
+
+[new] Allow user to save encoded file either same source folder or given path
+[new] Capable to encode audio files, but not fully supported
+[added] Language: Italian
+[added] Language: Lithuanian (Git #77)
+[added] Allow user to add FFmpeg arguments/command-line
+[added] Allow user to edit/rename Encoding Preset (Git #55)
+[added] Allow user to delete Encoding Preset (Git #55)
+[added] Allow user to delete queue by pressing DEL key (Git #55)
+[added] Allow user to add more Audio track
+[added] Allow TTC (TrueType Font Collection) to be embedded
+[added] Allow user to remove embeded subtitles
+[fixed] CPU Affinity & Priority has been fix! [Windows] (Git #61)
+[fixed] Download & Updater engine improved!
+[fixed] Temp folder will clear after finished encoding, open & close program
+[fixed] HEVC video passthrough not properly save
+[fixed] Linux plugin is now statically linked (portable), thanks to darealshinji
+[fixed] Invalid MKV language id (told by Nikolai Lyskov)
+[fixed] Prevent copy audio tracks cause MKV chapter begin copied
+[fixed] Queue item value on audio bit-rate, Freq, and Channel revert to default (Git #57)
+[fixed] Remove 4GB wav limit, using pipe + header (Git #56)
+[fixed] Missing translation strings
+[fixed] better detecting media files inside AviSynth script (Git #54)
+[fixed] WMA will force to AAC either MKV or MP4 (Git #51)
+[fixed] Invalid language id become "und" (Git #62)
+[fixed] In video tab, different mode cause set to default value.
+[fixed] Faster loading time by adding "-s" as argument (skip update)
+[fixed] AviSynth Trim command doesn't apply for audio (Git #65)
+[change] Media Encoder engine improved
+[change] Prefix [encoded] now changed to current date-time postfix (Git #68)
+[change] Music removed for About IFME, not suitable for professional environment
+[change] Updated ISO 639-2 language code
+[change] Using FFmpeg to extract font files
+[change] Using GUID rather then string equalities for Audio encoder (API change)
+[change] Remove --force-avs command
+[change] Allow AviSynth to use 10/12bit and YUV (Git #79)
+
+Version 5.1 (FLUORITE DIARY)
+-----------
+
+[new] Adding 12bit encoding support!
+[new] Audio tracks now can drop if not wanted to add final encoded file
+[new] Video now can skip encoding (applicable when source is HEVC)
+[new] --force-avs arguments for force AviSynth script added to queue (just in case IFME did not detect)
+[fixed] Wrong extension file which is benchmark extension was a notepad
+[fixed] MediaInfo didn't detect (Linux)
+[fixed] Missing audio mixing
+[fixed] Selecting profiles except "< new >" then add video result will follow profiles configuration
+[fixed] Temp folder not removed when closing IFME
+[fixed] Prevent empty string from launch a process/visit web
+[fixed] Git issue #35 #36 #37 #38 (told by forkicks)
+[fixed] Git issue #41 When type text into the ratefactor textbox, the characters are entered in the wrong order (told by forkicks)
+[fixed] Unable to open "Option" window due to error
+[fixed] Git issue #42, open queue list, which queue file not exist cause IFME to crash.
+[fixed] Prevent user enter invalid input
+[fixed] Prevent user add media via network location (\\PCNAME)
+[fixed] Prevent user set output folder via network location (\\PCNAME)
+[fixed] Git issue #45, destination folder path did not save
+[fixed] Git issue #46 and #47
+
+Version 5.0.9 (Dearness)
+-------------
+
+[fixed] Fix code mistake
+[fixed] Mp4 did not mux audio when do pass-through
+[added] Language: Čeština
+[added] Language: Français
+[added] Language: Português
+[added] Language: Deutsche
+
+Version 5.0.8 (True My Heart)
+-------------
+[new] Allow user to save queue list
+[new] Command-line encoding via queue file
+
+Version 5.0.7 (Twin Angel)
+-------------
+[new] Linux support (native)
+[new] Windows 32bit support
+[fixed] Subtitle did not extract
+[fixed] Form did not aligned properly on Linux
+
+Version 5.0.6.1 (Twin Angel)
+---------------
+Welcome to IFME Go aka version 5, feel queue encoding.
+
+[new] Re-write code, better & faster
+[new] Simple User Interface yet better
+[new] IFME 3.x Console style is back, low RAM usage
+[new] Extension support, allow extend IFME capabilities
+[new] x265 compiled binary of choice
+[new] Benchmark for testing CPU and x265 compiled
+[new] AviSynth installation status
+[fixed] No longer 1 subtitle per video
+[fixed] No longer 1 font collection for all video
+[added] Native AviSynth support
+[added] "auto" resolution and frame rate
+[change] Addons API
+[change] Profiles API
+[issue] Multi-language not yet implemented
+
+
 Version 4.10 (Twin Angel)
 ------------
 [fixed] Accepting longer file name and path

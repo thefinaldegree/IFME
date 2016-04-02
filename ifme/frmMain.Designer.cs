@@ -1,1517 +1,1619 @@
 ﻿namespace ifme
 {
-	partial class frmMain
-	{
-		/// <summary>
-		/// Required designer variable.
-		/// </summary>
-		private System.ComponentModel.IContainer components = null;
+    partial class frmMain
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
 
-		/// <summary>
-		/// Clean up any resources being used.
-		/// </summary>
-		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && (components != null))
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
-		#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
-			this.components = new System.ComponentModel.Container();
-			this.btnOptions = new System.Windows.Forms.Button();
-			this.btnAbout = new System.Windows.Forms.Button();
-			this.btnStart = new System.Windows.Forms.Button();
-			this.tabEncoding = new System.Windows.Forms.TabControl();
-			this.tabQueue = new System.Windows.Forms.TabPage();
-			this.btnQueueGenImgSeq = new System.Windows.Forms.Button();
-			this.btnQueueGenerate = new System.Windows.Forms.Button();
-			this.btnQueueEditScript = new System.Windows.Forms.Button();
-			this.btnPreview = new System.Windows.Forms.Button();
-			this.btnEdit = new System.Windows.Forms.Button();
-			this.chkDoneOffMachine = new System.Windows.Forms.CheckBox();
-			this.btnQueueBrowseDest = new System.Windows.Forms.Button();
-			this.txtDestDir = new System.Windows.Forms.TextBox();
-			this.chkQueueSaveTo = new System.Windows.Forms.CheckBox();
-			this.btnQueueDown = new System.Windows.Forms.Button();
-			this.btnQueueUp = new System.Windows.Forms.Button();
-			this.btnQueueClear = new System.Windows.Forms.Button();
-			this.btnQueueRemove = new System.Windows.Forms.Button();
-			this.btnQueueAdd = new System.Windows.Forms.Button();
-			this.lstQueue = new System.Windows.Forms.ListView();
-			this.colQueueFName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.colQueueExt = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.colQueueCodec = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.colQueueRes = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.colQueueFPS = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.colQueueBitDepth = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.colQueuePath = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.tabUserPreset = new System.Windows.Forms.TabPage();
-			this.btnUserPreDelete = new System.Windows.Forms.Button();
-			this.btnUserPreAdd = new System.Windows.Forms.Button();
-			this.btnUserPreSave = new System.Windows.Forms.Button();
-			this.lblUserPreData = new System.Windows.Forms.Label();
-			this.lblUserPreLabel = new System.Windows.Forms.Label();
-			this.cboUserPreList = new System.Windows.Forms.ComboBox();
-			this.pnlNagisan = new System.Windows.Forms.Panel();
-			this.tabVideo = new System.Windows.Forms.TabPage();
-			this.btnAdvanceHelp = new System.Windows.Forms.Button();
-			this.txtVideoAdvCmd = new System.Windows.Forms.TextBox();
-			this.lblVideoAdvCmd = new System.Windows.Forms.Label();
-			this.grpVideoRateCtrl = new System.Windows.Forms.GroupBox();
-			this.lblVideoRateFL = new System.Windows.Forms.Label();
-			this.lblVideoRateFH = new System.Windows.Forms.Label();
-			this.trkVideoRate = new System.Windows.Forms.TrackBar();
-			this.txtVideoRate = new System.Windows.Forms.TextBox();
-			this.lblVideoRateFactor = new System.Windows.Forms.Label();
-			this.cboVideoRateCtrl = new System.Windows.Forms.ComboBox();
-			this.grpVideoBasic = new System.Windows.Forms.GroupBox();
-			this.cboVideoPixFmt = new System.Windows.Forms.ComboBox();
-			this.lblVideoPixFmt = new System.Windows.Forms.Label();
-			this.cboVideoTune = new System.Windows.Forms.ComboBox();
-			this.lblVideoTune = new System.Windows.Forms.Label();
-			this.cboVideoPreset = new System.Windows.Forms.ComboBox();
-			this.lblVideoPreset = new System.Windows.Forms.Label();
-			this.tabAudio = new System.Windows.Forms.TabPage();
-			this.txtAudioCmd = new System.Windows.Forms.TextBox();
-			this.lblAudioCmdAdv = new System.Windows.Forms.Label();
-			this.grpAudioMode = new System.Windows.Forms.GroupBox();
-			this.cboAudioMode = new System.Windows.Forms.ComboBox();
-			this.grpAudioQuality = new System.Windows.Forms.GroupBox();
-			this.lblAudioChan = new System.Windows.Forms.Label();
-			this.cboAudioChan = new System.Windows.Forms.ComboBox();
-			this.lblAudioFreq = new System.Windows.Forms.Label();
-			this.cboAudioFreq = new System.Windows.Forms.ComboBox();
-			this.cboAudioBitRate = new System.Windows.Forms.ComboBox();
-			this.lblAudioBitRate = new System.Windows.Forms.Label();
-			this.grpAudioFormat = new System.Windows.Forms.GroupBox();
-			this.lblAudioFInfo = new System.Windows.Forms.Label();
-			this.lblAudioFormat = new System.Windows.Forms.Label();
-			this.cboAudioFormat = new System.Windows.Forms.ComboBox();
-			this.tabSubtitle = new System.Windows.Forms.TabPage();
-			this.lblSubtitleNotice = new System.Windows.Forms.Label();
-			this.btnSubDown = new System.Windows.Forms.Button();
-			this.btnSubUp = new System.Windows.Forms.Button();
-			this.chkSubEnable = new System.Windows.Forms.CheckBox();
-			this.lblSubLang = new System.Windows.Forms.Label();
-			this.cboSubLang = new System.Windows.Forms.ComboBox();
-			this.btnSubClear = new System.Windows.Forms.Button();
-			this.btnSubRemove = new System.Windows.Forms.Button();
-			this.btnSubAdd = new System.Windows.Forms.Button();
-			this.lstSubtitle = new System.Windows.Forms.ListView();
-			this.colSubFile = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.colSubExt = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.colSubLang = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.colSubPath = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.tabAttachment = new System.Windows.Forms.TabPage();
-			this.lblAttachNotice = new System.Windows.Forms.Label();
-			this.chkAttachEnable = new System.Windows.Forms.CheckBox();
-			this.txtAttachDesc = new System.Windows.Forms.TextBox();
-			this.lblAttachDesc = new System.Windows.Forms.Label();
-			this.lstAttachment = new System.Windows.Forms.ListView();
-			this.colAttachFile = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.colAttachExt = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.colAttachMime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.colAttachPath = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.btnAttachClear = new System.Windows.Forms.Button();
-			this.btnAttachRemove = new System.Windows.Forms.Button();
-			this.btnAttachAdd = new System.Windows.Forms.Button();
-			this.tabStatus = new System.Windows.Forms.TabPage();
-			this.rtfLog = new System.Windows.Forms.RichTextBox();
-			this.btnResume = new System.Windows.Forms.Button();
-			this.BGThread = new System.ComponentModel.BackgroundWorker();
-			this.proTip = new System.Windows.Forms.ToolTip(this.components);
-			this.pictBannerMain = new System.Windows.Forms.PictureBox();
-			this.pictBannerRight = new System.Windows.Forms.PictureBox();
-			this.pictDonate = new System.Windows.Forms.PictureBox();
-			this.tabEncoding.SuspendLayout();
-			this.tabQueue.SuspendLayout();
-			this.tabUserPreset.SuspendLayout();
-			this.tabVideo.SuspendLayout();
-			this.grpVideoRateCtrl.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.trkVideoRate)).BeginInit();
-			this.grpVideoBasic.SuspendLayout();
-			this.tabAudio.SuspendLayout();
-			this.grpAudioMode.SuspendLayout();
-			this.grpAudioQuality.SuspendLayout();
-			this.grpAudioFormat.SuspendLayout();
-			this.tabSubtitle.SuspendLayout();
-			this.tabAttachment.SuspendLayout();
-			this.tabStatus.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictBannerMain)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictBannerRight)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictDonate)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// btnOptions
-			// 
-			this.btnOptions.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.btnOptions.Location = new System.Drawing.Point(118, 445);
-			this.btnOptions.Name = "btnOptions";
-			this.btnOptions.Size = new System.Drawing.Size(100, 23);
-			this.btnOptions.TabIndex = 3;
-			this.btnOptions.Text = "{0}";
-			this.btnOptions.UseVisualStyleBackColor = true;
-			this.btnOptions.Click += new System.EventHandler(this.btnOptions_Click);
-			// 
-			// btnAbout
-			// 
-			this.btnAbout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.btnAbout.Location = new System.Drawing.Point(12, 445);
-			this.btnAbout.Name = "btnAbout";
-			this.btnAbout.Size = new System.Drawing.Size(100, 23);
-			this.btnAbout.TabIndex = 4;
-			this.btnAbout.Text = "{0}";
-			this.btnAbout.UseVisualStyleBackColor = true;
-			this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
-			// 
-			// btnStart
-			// 
-			this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnStart.Enabled = false;
-			this.btnStart.Location = new System.Drawing.Point(528, 445);
-			this.btnStart.Name = "btnStart";
-			this.btnStart.Size = new System.Drawing.Size(100, 23);
-			this.btnStart.TabIndex = 1;
-			this.btnStart.Text = "{0}";
-			this.btnStart.UseVisualStyleBackColor = true;
-			this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
-			// 
-			// tabEncoding
-			// 
-			this.tabEncoding.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.chkDonePowerOff = new System.Windows.Forms.CheckBox();
+            this.lblSpacer1 = new System.Windows.Forms.Label();
+            this.lblSpacer2 = new System.Windows.Forms.Label();
+            this.lstQueue = new System.Windows.Forms.ListView();
+            this.colQueueName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colQueueDuration = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colQueueTarget = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colQueueStatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cmsQueue = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.tsmiQueueNew = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiQueueOpen = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiQueueSave = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiQueueSaveAs = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsmiQueueDel = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiQueueSelectAll = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiQueueSelectNone = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiQueueSelectInvert = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsmiAviSynth = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiQueueAviSynthEdit = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsmiQueueAviSynthConvertTo = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabProp = new System.Windows.Forms.TabControl();
+            this.tabInfo = new System.Windows.Forms.TabPage();
+            this.grpPropFormat = new System.Windows.Forms.GroupBox();
+            this.rdoMKV = new System.Windows.Forms.RadioButton();
+            this.rdoMP4 = new System.Windows.Forms.RadioButton();
+            this.grpPropInput = new System.Windows.Forms.GroupBox();
+            this.txtSourceInfo = new System.Windows.Forms.TextBox();
+            this.tabVideo = new System.Windows.Forms.TabPage();
+            this.chkVideoDeinterlace = new System.Windows.Forms.CheckBox();
+            this.grpVideoDeInterlace = new System.Windows.Forms.GroupBox();
+            this.cboVideoDiField = new System.Windows.Forms.ComboBox();
+            this.lblVideoDiField = new System.Windows.Forms.Label();
+            this.cboVideoDiMode = new System.Windows.Forms.ComboBox();
+            this.lblVideoDiMode = new System.Windows.Forms.Label();
+            this.grpVideoCodec = new System.Windows.Forms.GroupBox();
+            this.btnVideoArgEdit = new System.Windows.Forms.Button();
+            this.nudVideoMultipass = new System.Windows.Forms.NumericUpDown();
+            this.lblVideoMultipass = new System.Windows.Forms.Label();
+            this.lblVideoRateFactor = new System.Windows.Forms.Label();
+            this.nudVideoRateFactor = new System.Windows.Forms.NumericUpDown();
+            this.lblVideoRateControl = new System.Windows.Forms.Label();
+            this.cboVideoTune = new System.Windows.Forms.ComboBox();
+            this.lblVideoTune = new System.Windows.Forms.Label();
+            this.cboVideoPreset = new System.Windows.Forms.ComboBox();
+            this.lblVideoPreset = new System.Windows.Forms.Label();
+            this.cboVideoEncodingType = new System.Windows.Forms.ComboBox();
+            this.cboVideoEncoder = new System.Windows.Forms.ComboBox();
+            this.lblVideoEncoder = new System.Windows.Forms.Label();
+            this.grpVideoQuality = new System.Windows.Forms.GroupBox();
+            this.cboVideoChroma = new System.Windows.Forms.ComboBox();
+            this.lblVideoColourSpace = new System.Windows.Forms.Label();
+            this.cboVideoBitDepth = new System.Windows.Forms.ComboBox();
+            this.lblVideoBitDepth = new System.Windows.Forms.Label();
+            this.cboVideoFrameRate = new System.Windows.Forms.ComboBox();
+            this.lblVideoFrameRate = new System.Windows.Forms.Label();
+            this.cboVideoResolution = new System.Windows.Forms.ComboBox();
+            this.lblVideoResolution = new System.Windows.Forms.Label();
+            this.tabAudio = new System.Windows.Forms.TabPage();
+            this.btnAudioMoveDown = new System.Windows.Forms.Button();
+            this.btnAudioMoveUp = new System.Windows.Forms.Button();
+            this.lblSpacer4 = new System.Windows.Forms.Label();
+            this.lstAudio = new System.Windows.Forms.ListView();
+            this.colAudioName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colAudioId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.grpAudioCodec = new System.Windows.Forms.GroupBox();
+            this.lblAudioMode = new System.Windows.Forms.Label();
+            this.cboAudioMode = new System.Windows.Forms.ComboBox();
+            this.btnAudioEditArg = new System.Windows.Forms.Button();
+            this.lblAudioEncoder = new System.Windows.Forms.Label();
+            this.lblAudioChannel = new System.Windows.Forms.Label();
+            this.cboAudioEncoder = new System.Windows.Forms.ComboBox();
+            this.cboAudioChannel = new System.Windows.Forms.ComboBox();
+            this.lblAudioQuality = new System.Windows.Forms.Label();
+            this.cboAudioFreq = new System.Windows.Forms.ComboBox();
+            this.cboAudioQuality = new System.Windows.Forms.ComboBox();
+            this.lblAudioFreq = new System.Windows.Forms.Label();
+            this.btnAudioRemove = new System.Windows.Forms.Button();
+            this.btnAudioAdd = new System.Windows.Forms.Button();
+            this.tabSubtitle = new System.Windows.Forms.TabPage();
+            this.cboSubLang = new System.Windows.Forms.ComboBox();
+            this.lstSub = new System.Windows.Forms.ListView();
+            this.colSubId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colSubName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colSubLang = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lblSpacer5 = new System.Windows.Forms.Label();
+            this.btnSubMoveDown = new System.Windows.Forms.Button();
+            this.btnSubMoveUp = new System.Windows.Forms.Button();
+            this.btnSubRemove = new System.Windows.Forms.Button();
+            this.btnSubAdd = new System.Windows.Forms.Button();
+            this.tabAttachment = new System.Windows.Forms.TabPage();
+            this.lstAttach = new System.Windows.Forms.ListView();
+            this.colAttachName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colAttachMime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnAttachDel = new System.Windows.Forms.Button();
+            this.btnAttachAdd = new System.Windows.Forms.Button();
+            this.lblProfile = new System.Windows.Forms.Label();
+            this.cboProfile = new System.Windows.Forms.ComboBox();
+            this.btnProfileSave = new System.Windows.Forms.Button();
+            this.btnProfileDelete = new System.Windows.Forms.Button();
+            this.chkOutput = new System.Windows.Forms.CheckBox();
+            this.txtOutputFolder = new System.Windows.Forms.TextBox();
+            this.btnBrowseOutput = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pbxBanner = new System.Windows.Forms.PictureBox();
+            this.btnQueueAdd = new System.Windows.Forms.Button();
+            this.btnQueueRemove = new System.Windows.Forms.Button();
+            this.btnQueueMoveUp = new System.Windows.Forms.Button();
+            this.btnQueueMoveDown = new System.Windows.Forms.Button();
+            this.btnQueueStop = new System.Windows.Forms.Button();
+            this.btnQueuePause = new System.Windows.Forms.Button();
+            this.btnQueueStart = new System.Windows.Forms.Button();
+            this.cmsQueue.SuspendLayout();
+            this.tabProp.SuspendLayout();
+            this.tabInfo.SuspendLayout();
+            this.grpPropFormat.SuspendLayout();
+            this.grpPropInput.SuspendLayout();
+            this.tabVideo.SuspendLayout();
+            this.grpVideoDeInterlace.SuspendLayout();
+            this.grpVideoCodec.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVideoMultipass)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVideoRateFactor)).BeginInit();
+            this.grpVideoQuality.SuspendLayout();
+            this.tabAudio.SuspendLayout();
+            this.grpAudioCodec.SuspendLayout();
+            this.tabSubtitle.SuspendLayout();
+            this.tabAttachment.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBanner)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // chkDonePowerOff
+            // 
+            this.chkDonePowerOff.Location = new System.Drawing.Point(12, 70);
+            this.chkDonePowerOff.Name = "chkDonePowerOff";
+            this.chkDonePowerOff.Size = new System.Drawing.Size(240, 32);
+            this.chkDonePowerOff.TabIndex = 10;
+            this.chkDonePowerOff.Text = "&Shutdown computer when done";
+            this.chkDonePowerOff.UseVisualStyleBackColor = true;
+            // 
+            // lblSpacer1
+            // 
+            this.lblSpacer1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSpacer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblSpacer1.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblSpacer1.Location = new System.Drawing.Point(572, 70);
+            this.lblSpacer1.Name = "lblSpacer1";
+            this.lblSpacer1.Size = new System.Drawing.Size(2, 32);
+            this.lblSpacer1.TabIndex = 4;
+            // 
+            // lblSpacer2
+            // 
+            this.lblSpacer2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSpacer2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblSpacer2.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblSpacer2.Location = new System.Drawing.Point(488, 70);
+            this.lblSpacer2.Name = "lblSpacer2";
+            this.lblSpacer2.Size = new System.Drawing.Size(2, 32);
+            this.lblSpacer2.TabIndex = 7;
+            // 
+            // lstQueue
+            // 
+            this.lstQueue.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.tabEncoding.Controls.Add(this.tabQueue);
-			this.tabEncoding.Controls.Add(this.tabUserPreset);
-			this.tabEncoding.Controls.Add(this.tabVideo);
-			this.tabEncoding.Controls.Add(this.tabAudio);
-			this.tabEncoding.Controls.Add(this.tabSubtitle);
-			this.tabEncoding.Controls.Add(this.tabAttachment);
-			this.tabEncoding.Controls.Add(this.tabStatus);
-			this.tabEncoding.Location = new System.Drawing.Point(12, 70);
-			this.tabEncoding.Name = "tabEncoding";
-			this.tabEncoding.SelectedIndex = 0;
-			this.tabEncoding.Size = new System.Drawing.Size(616, 369);
-			this.tabEncoding.TabIndex = 0;
-			// 
-			// tabQueue
-			// 
-			this.tabQueue.Controls.Add(this.btnQueueGenImgSeq);
-			this.tabQueue.Controls.Add(this.btnQueueGenerate);
-			this.tabQueue.Controls.Add(this.btnQueueEditScript);
-			this.tabQueue.Controls.Add(this.btnPreview);
-			this.tabQueue.Controls.Add(this.btnEdit);
-			this.tabQueue.Controls.Add(this.chkDoneOffMachine);
-			this.tabQueue.Controls.Add(this.btnQueueBrowseDest);
-			this.tabQueue.Controls.Add(this.txtDestDir);
-			this.tabQueue.Controls.Add(this.chkQueueSaveTo);
-			this.tabQueue.Controls.Add(this.btnQueueDown);
-			this.tabQueue.Controls.Add(this.btnQueueUp);
-			this.tabQueue.Controls.Add(this.btnQueueClear);
-			this.tabQueue.Controls.Add(this.btnQueueRemove);
-			this.tabQueue.Controls.Add(this.btnQueueAdd);
-			this.tabQueue.Controls.Add(this.lstQueue);
-			this.tabQueue.Location = new System.Drawing.Point(4, 22);
-			this.tabQueue.Name = "tabQueue";
-			this.tabQueue.Padding = new System.Windows.Forms.Padding(3);
-			this.tabQueue.Size = new System.Drawing.Size(608, 343);
-			this.tabQueue.TabIndex = 0;
-			this.tabQueue.Text = "{0}";
-			this.tabQueue.UseVisualStyleBackColor = true;
-			// 
-			// btnQueueGenImgSeq
-			// 
-			this.btnQueueGenImgSeq.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnQueueGenImgSeq.Image = global::ifme.Properties.Resources.image_add;
-			this.btnQueueGenImgSeq.Location = new System.Drawing.Point(488, 6);
-			this.btnQueueGenImgSeq.Name = "btnQueueGenImgSeq";
-			this.btnQueueGenImgSeq.Size = new System.Drawing.Size(24, 24);
-			this.btnQueueGenImgSeq.TabIndex = 14;
-			this.proTip.SetToolTip(this.btnQueueGenImgSeq, "Convert image sequence into video");
-			this.btnQueueGenImgSeq.UseVisualStyleBackColor = true;
-			this.btnQueueGenImgSeq.Click += new System.EventHandler(this.btnQueueGenImgSeq_Click);
-			// 
-			// btnQueueGenerate
-			// 
-			this.btnQueueGenerate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnQueueGenerate.Enabled = false;
-			this.btnQueueGenerate.Image = global::ifme.Properties.Resources.monitor_lightning;
-			this.btnQueueGenerate.Location = new System.Drawing.Point(458, 6);
-			this.btnQueueGenerate.Name = "btnQueueGenerate";
-			this.btnQueueGenerate.Size = new System.Drawing.Size(24, 24);
-			this.btnQueueGenerate.TabIndex = 13;
-			this.proTip.SetToolTip(this.btnQueueGenerate, "Convert to HFR (High Frame Rate)");
-			this.btnQueueGenerate.UseVisualStyleBackColor = true;
-			this.btnQueueGenerate.Click += new System.EventHandler(this.btnQueueGenerate_Click);
-			// 
-			// btnQueueEditScript
-			// 
-			this.btnQueueEditScript.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnQueueEditScript.Enabled = false;
-			this.btnQueueEditScript.Image = global::ifme.Properties.Resources.page_edit;
-			this.btnQueueEditScript.Location = new System.Drawing.Point(368, 6);
-			this.btnQueueEditScript.Name = "btnQueueEditScript";
-			this.btnQueueEditScript.Size = new System.Drawing.Size(24, 24);
-			this.btnQueueEditScript.TabIndex = 12;
-			this.proTip.SetToolTip(this.btnQueueEditScript, "Edit AviSynth Script");
-			this.btnQueueEditScript.UseVisualStyleBackColor = true;
-			this.btnQueueEditScript.Click += new System.EventHandler(this.btnQueueEditScript_Click);
-			// 
-			// btnPreview
-			// 
-			this.btnPreview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnPreview.Enabled = false;
-			this.btnPreview.Image = global::ifme.Properties.Resources.film_go;
-			this.btnPreview.Location = new System.Drawing.Point(428, 6);
-			this.btnPreview.Name = "btnPreview";
-			this.btnPreview.Size = new System.Drawing.Size(24, 24);
-			this.btnPreview.TabIndex = 11;
-			this.proTip.SetToolTip(this.btnPreview, "Preview");
-			this.btnPreview.UseVisualStyleBackColor = true;
-			this.btnPreview.Click += new System.EventHandler(this.btnPreview_Click);
-			// 
-			// btnEdit
-			// 
-			this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnEdit.Enabled = false;
-			this.btnEdit.Image = global::ifme.Properties.Resources.film_edit;
-			this.btnEdit.Location = new System.Drawing.Point(398, 6);
-			this.btnEdit.Name = "btnEdit";
-			this.btnEdit.Size = new System.Drawing.Size(24, 24);
-			this.btnEdit.TabIndex = 10;
-			this.proTip.SetToolTip(this.btnEdit, "Edit");
-			this.btnEdit.UseVisualStyleBackColor = true;
-			this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-			// 
-			// chkDoneOffMachine
-			// 
-			this.chkDoneOffMachine.AutoSize = true;
-			this.chkDoneOffMachine.Location = new System.Drawing.Point(6, 11);
-			this.chkDoneOffMachine.Name = "chkDoneOffMachine";
-			this.chkDoneOffMachine.Size = new System.Drawing.Size(42, 17);
-			this.chkDoneOffMachine.TabIndex = 9;
-			this.chkDoneOffMachine.Text = "{0}";
-			this.chkDoneOffMachine.UseVisualStyleBackColor = true;
-			this.chkDoneOffMachine.CheckedChanged += new System.EventHandler(this.chkDoneOffMachine_CheckedChanged);
-			// 
-			// btnQueueBrowseDest
-			// 
-			this.btnQueueBrowseDest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnQueueBrowseDest.Image = global::ifme.Properties.Resources.folder_explore;
-			this.btnQueueBrowseDest.Location = new System.Drawing.Point(575, 315);
-			this.btnQueueBrowseDest.Name = "btnQueueBrowseDest";
-			this.btnQueueBrowseDest.Size = new System.Drawing.Size(27, 23);
-			this.btnQueueBrowseDest.TabIndex = 8;
-			this.btnQueueBrowseDest.UseVisualStyleBackColor = true;
-			this.btnQueueBrowseDest.Click += new System.EventHandler(this.btnQueueBrowseDest_Click);
-			// 
-			// txtDestDir
-			// 
-			this.txtDestDir.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.lstQueue.CheckBoxes = true;
+            this.lstQueue.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.colQueueName,
+            this.colQueueDuration,
+            this.colQueueTarget,
+            this.colQueueStatus});
+            this.lstQueue.ContextMenuStrip = this.cmsQueue;
+            this.lstQueue.FullRowSelect = true;
+            this.lstQueue.Location = new System.Drawing.Point(12, 108);
+            this.lstQueue.Name = "lstQueue";
+            this.lstQueue.Size = new System.Drawing.Size(676, 214);
+            this.lstQueue.TabIndex = 11;
+            this.lstQueue.UseCompatibleStateImageBehavior = false;
+            this.lstQueue.View = System.Windows.Forms.View.Details;
+            this.lstQueue.SelectedIndexChanged += new System.EventHandler(this.lstQueue_SelectedIndexChanged);
+            this.lstQueue.DragDrop += new System.Windows.Forms.DragEventHandler(this.lstQueue_DragDrop);
+            this.lstQueue.DragEnter += new System.Windows.Forms.DragEventHandler(this.lstQueue_DragEnter);
+            // 
+            // colQueueName
+            // 
+            this.colQueueName.Tag = "colQueueName";
+            this.colQueueName.Text = "Name";
+            this.colQueueName.Width = 392;
+            // 
+            // colQueueDuration
+            // 
+            this.colQueueDuration.Tag = "colQueueDuration";
+            this.colQueueDuration.Text = "Duration";
+            this.colQueueDuration.Width = 80;
+            // 
+            // colQueueTarget
+            // 
+            this.colQueueTarget.Tag = "colQueueTarget";
+            this.colQueueTarget.Text = "Target";
+            this.colQueueTarget.Width = 80;
+            // 
+            // colQueueStatus
+            // 
+            this.colQueueStatus.Tag = "colQueueStatus";
+            this.colQueueStatus.Text = "Status";
+            this.colQueueStatus.Width = 120;
+            // 
+            // cmsQueue
+            // 
+            this.cmsQueue.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.cmsQueue.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiQueueNew,
+            this.tsmiQueueOpen,
+            this.tsmiQueueSave,
+            this.tsmiQueueSaveAs,
+            this.toolStripSeparator1,
+            this.tsmiQueueDel,
+            this.tsmiQueueSelectAll,
+            this.tsmiQueueSelectNone,
+            this.tsmiQueueSelectInvert,
+            this.toolStripSeparator2,
+            this.tsmiAviSynth});
+            this.cmsQueue.Name = "cmsQueue";
+            this.cmsQueue.Size = new System.Drawing.Size(193, 214);
+            // 
+            // tsmiQueueNew
+            // 
+            this.tsmiQueueNew.Image = global::ifme.Properties.Resources.document_new;
+            this.tsmiQueueNew.Name = "tsmiQueueNew";
+            this.tsmiQueueNew.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.tsmiQueueNew.Size = new System.Drawing.Size(192, 22);
+            this.tsmiQueueNew.Text = "&New queue";
+            // 
+            // tsmiQueueOpen
+            // 
+            this.tsmiQueueOpen.Image = global::ifme.Properties.Resources.document_open;
+            this.tsmiQueueOpen.Name = "tsmiQueueOpen";
+            this.tsmiQueueOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.tsmiQueueOpen.Size = new System.Drawing.Size(192, 22);
+            this.tsmiQueueOpen.Text = "&Open queue";
+            // 
+            // tsmiQueueSave
+            // 
+            this.tsmiQueueSave.Image = global::ifme.Properties.Resources.document_save;
+            this.tsmiQueueSave.Name = "tsmiQueueSave";
+            this.tsmiQueueSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.tsmiQueueSave.Size = new System.Drawing.Size(192, 22);
+            this.tsmiQueueSave.Text = "&Save queue";
+            // 
+            // tsmiQueueSaveAs
+            // 
+            this.tsmiQueueSaveAs.Image = global::ifme.Properties.Resources.document_save_as;
+            this.tsmiQueueSaveAs.Name = "tsmiQueueSaveAs";
+            this.tsmiQueueSaveAs.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.S)));
+            this.tsmiQueueSaveAs.Size = new System.Drawing.Size(192, 22);
+            this.tsmiQueueSaveAs.Text = "Save &as...";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(189, 6);
+            // 
+            // tsmiQueueDel
+            // 
+            this.tsmiQueueDel.Image = global::ifme.Properties.Resources.edit_delete;
+            this.tsmiQueueDel.Name = "tsmiQueueDel";
+            this.tsmiQueueDel.ShortcutKeys = System.Windows.Forms.Keys.Delete;
+            this.tsmiQueueDel.Size = new System.Drawing.Size(192, 22);
+            this.tsmiQueueDel.Text = "&Delete";
+            // 
+            // tsmiQueueSelectAll
+            // 
+            this.tsmiQueueSelectAll.Image = global::ifme.Properties.Resources.edit_select_all;
+            this.tsmiQueueSelectAll.Name = "tsmiQueueSelectAll";
+            this.tsmiQueueSelectAll.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
+            this.tsmiQueueSelectAll.Size = new System.Drawing.Size(192, 22);
+            this.tsmiQueueSelectAll.Text = "S&elect All";
+            // 
+            // tsmiQueueSelectNone
+            // 
+            this.tsmiQueueSelectNone.Image = global::ifme.Properties.Resources.edit_bomb;
+            this.tsmiQueueSelectNone.Name = "tsmiQueueSelectNone";
+            this.tsmiQueueSelectNone.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
+            this.tsmiQueueSelectNone.Size = new System.Drawing.Size(192, 22);
+            this.tsmiQueueSelectNone.Text = "Select N&one";
+            // 
+            // tsmiQueueSelectInvert
+            // 
+            this.tsmiQueueSelectInvert.Image = global::ifme.Properties.Resources.edit_redo;
+            this.tsmiQueueSelectInvert.Name = "tsmiQueueSelectInvert";
+            this.tsmiQueueSelectInvert.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
+            this.tsmiQueueSelectInvert.Size = new System.Drawing.Size(192, 22);
+            this.tsmiQueueSelectInvert.Text = "&Invert selection";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(189, 6);
+            // 
+            // tsmiAviSynth
+            // 
+            this.tsmiAviSynth.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiQueueAviSynthEdit,
+            this.toolStripSeparator3,
+            this.tsmiQueueAviSynthConvertTo});
+            this.tsmiAviSynth.Image = global::ifme.Properties.Resources.code_context;
+            this.tsmiAviSynth.Name = "tsmiAviSynth";
+            this.tsmiAviSynth.Size = new System.Drawing.Size(192, 22);
+            this.tsmiAviSynth.Text = "A&viSynth";
+            // 
+            // tsmiQueueAviSynthEdit
+            // 
+            this.tsmiQueueAviSynthEdit.Name = "tsmiQueueAviSynthEdit";
+            this.tsmiQueueAviSynthEdit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
+            this.tsmiQueueAviSynthEdit.Size = new System.Drawing.Size(172, 22);
+            this.tsmiQueueAviSynthEdit.Text = "Edit S&cript";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(169, 6);
+            // 
+            // tsmiQueueAviSynthConvertTo
+            // 
+            this.tsmiQueueAviSynthConvertTo.Name = "tsmiQueueAviSynthConvertTo";
+            this.tsmiQueueAviSynthConvertTo.Size = new System.Drawing.Size(172, 22);
+            this.tsmiQueueAviSynthConvertTo.Text = "&Convert to AviSynth";
+            // 
+            // tabProp
+            // 
+            this.tabProp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.txtDestDir.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtDestDir.Location = new System.Drawing.Point(27, 316);
-			this.txtDestDir.Name = "txtDestDir";
-			this.txtDestDir.ReadOnly = true;
-			this.txtDestDir.Size = new System.Drawing.Size(542, 21);
-			this.txtDestDir.TabIndex = 0;
-			this.txtDestDir.TextChanged += new System.EventHandler(this.txtDestDir_TextChanged);
-			// 
-			// chkQueueSaveTo
-			// 
-			this.chkQueueSaveTo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.chkQueueSaveTo.AutoSize = true;
-			this.chkQueueSaveTo.Location = new System.Drawing.Point(6, 320);
-			this.chkQueueSaveTo.Name = "chkQueueSaveTo";
-			this.chkQueueSaveTo.Size = new System.Drawing.Size(15, 14);
-			this.chkQueueSaveTo.TabIndex = 7;
-			this.chkQueueSaveTo.UseVisualStyleBackColor = true;
-			this.chkQueueSaveTo.CheckedChanged += new System.EventHandler(this.chkQueueSaveTo_CheckedChanged);
-			// 
-			// btnQueueDown
-			// 
-			this.btnQueueDown.Anchor = System.Windows.Forms.AnchorStyles.Top;
-			this.btnQueueDown.Image = global::ifme.Properties.Resources.go_down;
-			this.btnQueueDown.Location = new System.Drawing.Point(307, 6);
-			this.btnQueueDown.Name = "btnQueueDown";
-			this.btnQueueDown.Size = new System.Drawing.Size(24, 24);
-			this.btnQueueDown.TabIndex = 5;
-			this.btnQueueDown.UseVisualStyleBackColor = true;
-			this.btnQueueDown.Click += new System.EventHandler(this.btnQueueDown_Click);
-			// 
-			// btnQueueUp
-			// 
-			this.btnQueueUp.Anchor = System.Windows.Forms.AnchorStyles.Top;
-			this.btnQueueUp.Image = global::ifme.Properties.Resources.go_up;
-			this.btnQueueUp.Location = new System.Drawing.Point(277, 6);
-			this.btnQueueUp.Name = "btnQueueUp";
-			this.btnQueueUp.Size = new System.Drawing.Size(24, 24);
-			this.btnQueueUp.TabIndex = 4;
-			this.btnQueueUp.UseVisualStyleBackColor = true;
-			this.btnQueueUp.Click += new System.EventHandler(this.btnQueueUp_Click);
-			// 
-			// btnQueueClear
-			// 
-			this.btnQueueClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnQueueClear.Image = global::ifme.Properties.Resources.list_clear;
-			this.btnQueueClear.Location = new System.Drawing.Point(578, 6);
-			this.btnQueueClear.Name = "btnQueueClear";
-			this.btnQueueClear.Size = new System.Drawing.Size(24, 24);
-			this.btnQueueClear.TabIndex = 3;
-			this.btnQueueClear.UseVisualStyleBackColor = true;
-			this.btnQueueClear.Click += new System.EventHandler(this.btnQueueClear_Click);
-			// 
-			// btnQueueRemove
-			// 
-			this.btnQueueRemove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnQueueRemove.Image = global::ifme.Properties.Resources.list_remove;
-			this.btnQueueRemove.Location = new System.Drawing.Point(548, 6);
-			this.btnQueueRemove.Name = "btnQueueRemove";
-			this.btnQueueRemove.Size = new System.Drawing.Size(24, 24);
-			this.btnQueueRemove.TabIndex = 2;
-			this.btnQueueRemove.UseVisualStyleBackColor = true;
-			this.btnQueueRemove.Click += new System.EventHandler(this.btnQueueRemove_Click);
-			// 
-			// btnQueueAdd
-			// 
-			this.btnQueueAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnQueueAdd.Image = global::ifme.Properties.Resources.list_add;
-			this.btnQueueAdd.Location = new System.Drawing.Point(518, 6);
-			this.btnQueueAdd.Name = "btnQueueAdd";
-			this.btnQueueAdd.Size = new System.Drawing.Size(24, 24);
-			this.btnQueueAdd.TabIndex = 1;
-			this.btnQueueAdd.UseVisualStyleBackColor = true;
-			this.btnQueueAdd.Click += new System.EventHandler(this.btnQueueAdd_Click);
-			// 
-			// lstQueue
-			// 
-			this.lstQueue.AllowDrop = true;
-			this.lstQueue.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabProp.Controls.Add(this.tabInfo);
+            this.tabProp.Controls.Add(this.tabVideo);
+            this.tabProp.Controls.Add(this.tabAudio);
+            this.tabProp.Controls.Add(this.tabSubtitle);
+            this.tabProp.Controls.Add(this.tabAttachment);
+            this.tabProp.Location = new System.Drawing.Point(12, 328);
+            this.tabProp.Name = "tabProp";
+            this.tabProp.SelectedIndex = 0;
+            this.tabProp.Size = new System.Drawing.Size(676, 300);
+            this.tabProp.TabIndex = 12;
+            // 
+            // tabInfo
+            // 
+            this.tabInfo.Controls.Add(this.grpPropFormat);
+            this.tabInfo.Controls.Add(this.grpPropInput);
+            this.tabInfo.Location = new System.Drawing.Point(4, 22);
+            this.tabInfo.Name = "tabInfo";
+            this.tabInfo.Padding = new System.Windows.Forms.Padding(3);
+            this.tabInfo.Size = new System.Drawing.Size(668, 274);
+            this.tabInfo.TabIndex = 0;
+            this.tabInfo.Text = "Properties";
+            this.tabInfo.UseVisualStyleBackColor = true;
+            // 
+            // grpPropFormat
+            // 
+            this.grpPropFormat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpPropFormat.Controls.Add(this.rdoMKV);
+            this.grpPropFormat.Controls.Add(this.rdoMP4);
+            this.grpPropFormat.Location = new System.Drawing.Point(6, 6);
+            this.grpPropFormat.Name = "grpPropFormat";
+            this.grpPropFormat.Size = new System.Drawing.Size(656, 50);
+            this.grpPropFormat.TabIndex = 1;
+            this.grpPropFormat.TabStop = false;
+            this.grpPropFormat.Text = "Output &Format";
+            // 
+            // rdoMKV
+            // 
+            this.rdoMKV.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.rdoMKV.AutoSize = true;
+            this.rdoMKV.Location = new System.Drawing.Point(331, 19);
+            this.rdoMKV.Name = "rdoMKV";
+            this.rdoMKV.Size = new System.Drawing.Size(45, 17);
+            this.rdoMKV.TabIndex = 1;
+            this.rdoMKV.TabStop = true;
+            this.rdoMKV.Text = "M&KV";
+            this.rdoMKV.UseVisualStyleBackColor = true;
+            this.rdoMKV.CheckedChanged += new System.EventHandler(this.rdoMKV_CheckedChanged);
+            // 
+            // rdoMP4
+            // 
+            this.rdoMP4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.rdoMP4.AutoSize = true;
+            this.rdoMP4.Location = new System.Drawing.Point(280, 19);
+            this.rdoMP4.Name = "rdoMP4";
+            this.rdoMP4.Size = new System.Drawing.Size(45, 17);
+            this.rdoMP4.TabIndex = 0;
+            this.rdoMP4.TabStop = true;
+            this.rdoMP4.Text = "&MP4";
+            this.rdoMP4.UseVisualStyleBackColor = true;
+            this.rdoMP4.CheckedChanged += new System.EventHandler(this.rdoMP4_CheckedChanged);
+            // 
+            // grpPropInput
+            // 
+            this.grpPropInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.lstQueue.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.colQueueFName,
-            this.colQueueExt,
-            this.colQueueCodec,
-            this.colQueueRes,
-            this.colQueueFPS,
-            this.colQueueBitDepth,
-            this.colQueuePath});
-			this.lstQueue.FullRowSelect = true;
-			this.lstQueue.Location = new System.Drawing.Point(6, 36);
-			this.lstQueue.Name = "lstQueue";
-			this.lstQueue.Size = new System.Drawing.Size(596, 273);
-			this.lstQueue.TabIndex = 6;
-			this.lstQueue.UseCompatibleStateImageBehavior = false;
-			this.lstQueue.View = System.Windows.Forms.View.Details;
-			this.lstQueue.SelectedIndexChanged += new System.EventHandler(this.lstQueue_SelectedIndexChanged);
-			this.lstQueue.DragDrop += new System.Windows.Forms.DragEventHandler(this.lstQueue_DragDrop);
-			this.lstQueue.DragEnter += new System.Windows.Forms.DragEventHandler(this.lstQueue_DragEnter);
-			this.lstQueue.DoubleClick += new System.EventHandler(this.lstQueue_DoubleClick);
-			// 
-			// colQueueFName
-			// 
-			this.colQueueFName.Text = "";
-			this.colQueueFName.Width = 225;
-			// 
-			// colQueueExt
-			// 
-			this.colQueueExt.Text = "";
-			this.colQueueExt.Width = 40;
-			// 
-			// colQueueCodec
-			// 
-			this.colQueueCodec.Text = "";
-			// 
-			// colQueueRes
-			// 
-			this.colQueueRes.Text = "";
-			this.colQueueRes.Width = 75;
-			// 
-			// colQueueFPS
-			// 
-			this.colQueueFPS.Text = "fps";
-			this.colQueueFPS.Width = 80;
-			// 
-			// colQueueBitDepth
-			// 
-			this.colQueueBitDepth.Text = "";
-			// 
-			// colQueuePath
-			// 
-			this.colQueuePath.Text = "";
-			this.colQueuePath.Width = 52;
-			// 
-			// tabUserPreset
-			// 
-			this.tabUserPreset.Controls.Add(this.btnUserPreDelete);
-			this.tabUserPreset.Controls.Add(this.btnUserPreAdd);
-			this.tabUserPreset.Controls.Add(this.btnUserPreSave);
-			this.tabUserPreset.Controls.Add(this.lblUserPreData);
-			this.tabUserPreset.Controls.Add(this.lblUserPreLabel);
-			this.tabUserPreset.Controls.Add(this.cboUserPreList);
-			this.tabUserPreset.Controls.Add(this.pnlNagisan);
-			this.tabUserPreset.Location = new System.Drawing.Point(4, 22);
-			this.tabUserPreset.Name = "tabUserPreset";
-			this.tabUserPreset.Size = new System.Drawing.Size(608, 343);
-			this.tabUserPreset.TabIndex = 7;
-			this.tabUserPreset.Text = "{0}";
-			this.tabUserPreset.UseVisualStyleBackColor = true;
-			// 
-			// btnUserPreDelete
-			// 
-			this.btnUserPreDelete.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.btnUserPreDelete.Image = global::ifme.Properties.Resources.list_remove;
-			this.btnUserPreDelete.Location = new System.Drawing.Point(468, 108);
-			this.btnUserPreDelete.Name = "btnUserPreDelete";
-			this.btnUserPreDelete.Size = new System.Drawing.Size(24, 24);
-			this.btnUserPreDelete.TabIndex = 5;
-			this.btnUserPreDelete.UseVisualStyleBackColor = true;
-			this.btnUserPreDelete.Click += new System.EventHandler(this.btnUserPreDelete_Click);
-			// 
-			// btnUserPreAdd
-			// 
-			this.btnUserPreAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.btnUserPreAdd.Image = global::ifme.Properties.Resources.list_add;
-			this.btnUserPreAdd.Location = new System.Drawing.Point(438, 108);
-			this.btnUserPreAdd.Name = "btnUserPreAdd";
-			this.btnUserPreAdd.Size = new System.Drawing.Size(24, 24);
-			this.btnUserPreAdd.TabIndex = 4;
-			this.btnUserPreAdd.UseVisualStyleBackColor = true;
-			this.btnUserPreAdd.Click += new System.EventHandler(this.btnUserPreAdd_Click);
-			// 
-			// btnUserPreSave
-			// 
-			this.btnUserPreSave.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.btnUserPreSave.Image = global::ifme.Properties.Resources.disk;
-			this.btnUserPreSave.Location = new System.Drawing.Point(408, 108);
-			this.btnUserPreSave.Name = "btnUserPreSave";
-			this.btnUserPreSave.Size = new System.Drawing.Size(24, 24);
-			this.btnUserPreSave.TabIndex = 3;
-			this.btnUserPreSave.UseVisualStyleBackColor = true;
-			this.btnUserPreSave.Click += new System.EventHandler(this.btnUserPreSave_Click);
-			// 
-			// lblUserPreData
-			// 
-			this.lblUserPreData.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.lblUserPreData.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.lblUserPreData.Location = new System.Drawing.Point(190, 162);
-			this.lblUserPreData.Name = "lblUserPreData";
-			this.lblUserPreData.Size = new System.Drawing.Size(302, 42);
-			this.lblUserPreData.TabIndex = 2;
-			this.lblUserPreData.Text = "{0}\r\n{1}\r\n{2}";
-			this.lblUserPreData.Click += new System.EventHandler(this.lblUserPreData_Click);
-			// 
-			// lblUserPreLabel
-			// 
-			this.lblUserPreLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.lblUserPreLabel.Location = new System.Drawing.Point(114, 162);
-			this.lblUserPreLabel.Name = "lblUserPreLabel";
-			this.lblUserPreLabel.Size = new System.Drawing.Size(70, 42);
-			this.lblUserPreLabel.TabIndex = 1;
-			this.lblUserPreLabel.Text = "{0}:\r\n{1}:\r\n{2}:";
-			this.lblUserPreLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			// 
-			// cboUserPreList
-			// 
-			this.cboUserPreList.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.cboUserPreList.FormattingEnabled = true;
-			this.cboUserPreList.Location = new System.Drawing.Point(117, 138);
-			this.cboUserPreList.Name = "cboUserPreList";
-			this.cboUserPreList.Size = new System.Drawing.Size(375, 21);
-			this.cboUserPreList.TabIndex = 0;
-			this.cboUserPreList.SelectedIndexChanged += new System.EventHandler(this.cboUserPreList_SelectedIndexChanged);
-			// 
-			// pnlNagisan
-			// 
-			this.pnlNagisan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.pnlNagisan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.pnlNagisan.Location = new System.Drawing.Point(409, 0);
-			this.pnlNagisan.Name = "pnlNagisan";
-			this.pnlNagisan.Size = new System.Drawing.Size(199, 343);
-			this.pnlNagisan.TabIndex = 6;
-			// 
-			// tabVideo
-			// 
-			this.tabVideo.Controls.Add(this.btnAdvanceHelp);
-			this.tabVideo.Controls.Add(this.txtVideoAdvCmd);
-			this.tabVideo.Controls.Add(this.lblVideoAdvCmd);
-			this.tabVideo.Controls.Add(this.grpVideoRateCtrl);
-			this.tabVideo.Controls.Add(this.grpVideoBasic);
-			this.tabVideo.Location = new System.Drawing.Point(4, 22);
-			this.tabVideo.Name = "tabVideo";
-			this.tabVideo.Padding = new System.Windows.Forms.Padding(3);
-			this.tabVideo.Size = new System.Drawing.Size(608, 343);
-			this.tabVideo.TabIndex = 1;
-			this.tabVideo.Text = "{0}";
-			this.tabVideo.UseVisualStyleBackColor = true;
-			// 
-			// btnAdvanceHelp
-			// 
-			this.btnAdvanceHelp.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.btnAdvanceHelp.Image = global::ifme.Properties.Resources.application_xp_terminal;
-			this.btnAdvanceHelp.Location = new System.Drawing.Point(575, 315);
-			this.btnAdvanceHelp.Name = "btnAdvanceHelp";
-			this.btnAdvanceHelp.Size = new System.Drawing.Size(27, 23);
-			this.btnAdvanceHelp.TabIndex = 7;
-			this.btnAdvanceHelp.UseVisualStyleBackColor = true;
-			this.btnAdvanceHelp.Click += new System.EventHandler(this.btnAdvanceHelp_Click);
-			// 
-			// txtVideoAdvCmd
-			// 
-			this.txtVideoAdvCmd.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.txtVideoAdvCmd.Location = new System.Drawing.Point(6, 316);
-			this.txtVideoAdvCmd.Name = "txtVideoAdvCmd";
-			this.txtVideoAdvCmd.Size = new System.Drawing.Size(563, 20);
-			this.txtVideoAdvCmd.TabIndex = 6;
-			this.txtVideoAdvCmd.TextChanged += new System.EventHandler(this.txtVideoAdvCmd_TextChanged);
-			// 
-			// lblVideoAdvCmd
-			// 
-			this.lblVideoAdvCmd.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.lblVideoAdvCmd.AutoSize = true;
-			this.lblVideoAdvCmd.Location = new System.Drawing.Point(6, 300);
-			this.lblVideoAdvCmd.Name = "lblVideoAdvCmd";
-			this.lblVideoAdvCmd.Size = new System.Drawing.Size(27, 13);
-			this.lblVideoAdvCmd.TabIndex = 0;
-			this.lblVideoAdvCmd.Text = "{0}:";
-			// 
-			// grpVideoRateCtrl
-			// 
-			this.grpVideoRateCtrl.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.grpVideoRateCtrl.Controls.Add(this.lblVideoRateFL);
-			this.grpVideoRateCtrl.Controls.Add(this.lblVideoRateFH);
-			this.grpVideoRateCtrl.Controls.Add(this.trkVideoRate);
-			this.grpVideoRateCtrl.Controls.Add(this.txtVideoRate);
-			this.grpVideoRateCtrl.Controls.Add(this.lblVideoRateFactor);
-			this.grpVideoRateCtrl.Controls.Add(this.cboVideoRateCtrl);
-			this.grpVideoRateCtrl.Location = new System.Drawing.Point(6, 112);
-			this.grpVideoRateCtrl.Name = "grpVideoRateCtrl";
-			this.grpVideoRateCtrl.Size = new System.Drawing.Size(596, 185);
-			this.grpVideoRateCtrl.TabIndex = 0;
-			this.grpVideoRateCtrl.TabStop = false;
-			this.grpVideoRateCtrl.Text = "{0}";
-			// 
-			// lblVideoRateFL
-			// 
-			this.lblVideoRateFL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.lblVideoRateFL.Location = new System.Drawing.Point(348, 136);
-			this.lblVideoRateFL.Name = "lblVideoRateFL";
-			this.lblVideoRateFL.Size = new System.Drawing.Size(200, 14);
-			this.lblVideoRateFL.TabIndex = 0;
-			this.lblVideoRateFL.Text = "({0}) 51";
-			this.lblVideoRateFL.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			// 
-			// lblVideoRateFH
-			// 
-			this.lblVideoRateFH.Location = new System.Drawing.Point(45, 136);
-			this.lblVideoRateFH.Name = "lblVideoRateFH";
-			this.lblVideoRateFH.Size = new System.Drawing.Size(200, 14);
-			this.lblVideoRateFH.TabIndex = 0;
-			this.lblVideoRateFH.Text = "0 ({0})";
-			// 
-			// trkVideoRate
-			// 
-			this.trkVideoRate.BackColor = System.Drawing.Color.White;
-			this.trkVideoRate.Location = new System.Drawing.Point(48, 88);
-			this.trkVideoRate.Maximum = 51;
-			this.trkVideoRate.Name = "trkVideoRate";
-			this.trkVideoRate.Size = new System.Drawing.Size(500, 45);
-			this.trkVideoRate.TabIndex = 5;
-			this.trkVideoRate.Value = 26;
-			this.trkVideoRate.ValueChanged += new System.EventHandler(this.trkVideoRate_ValueChanged);
-			// 
-			// txtVideoRate
-			// 
-			this.txtVideoRate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.txtVideoRate.Location = new System.Drawing.Point(448, 61);
-			this.txtVideoRate.Name = "txtVideoRate";
-			this.txtVideoRate.ShortcutsEnabled = false;
-			this.txtVideoRate.Size = new System.Drawing.Size(100, 20);
-			this.txtVideoRate.TabIndex = 4;
-			this.txtVideoRate.Text = "26";
-			this.txtVideoRate.TextChanged += new System.EventHandler(this.txtVideoRate_TextChanged);
-			this.txtVideoRate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtVideoRate_KeyPress);
-			// 
-			// lblVideoRateFactor
-			// 
-			this.lblVideoRateFactor.AutoSize = true;
-			this.lblVideoRateFactor.Location = new System.Drawing.Point(45, 64);
-			this.lblVideoRateFactor.Name = "lblVideoRateFactor";
-			this.lblVideoRateFactor.Size = new System.Drawing.Size(27, 13);
-			this.lblVideoRateFactor.TabIndex = 0;
-			this.lblVideoRateFactor.Text = "{0}:";
-			// 
-			// cboVideoRateCtrl
-			// 
-			this.cboVideoRateCtrl.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cboVideoRateCtrl.FormattingEnabled = true;
-			this.cboVideoRateCtrl.Items.AddRange(new object[] {
-            "Single pass, Ratefactor-based",
-            "Single pass, Quantizer-based",
-            "Single pass, Bitrate-based",
-            "Multipass, 2 pass",
-            "Multipass, 3 pass",
-            "Multipass, 4 pass",
-            "Multipass, 5 pass",
-            "Multipass, 6 pass",
-            "Multipass, 7 pass",
-            "Multipass, 8 pass",
-            "Multipass, 9 pass"});
-			this.cboVideoRateCtrl.Location = new System.Drawing.Point(48, 34);
-			this.cboVideoRateCtrl.Name = "cboVideoRateCtrl";
-			this.cboVideoRateCtrl.Size = new System.Drawing.Size(500, 21);
-			this.cboVideoRateCtrl.TabIndex = 3;
-			this.cboVideoRateCtrl.SelectedIndexChanged += new System.EventHandler(this.cboVideoRateCtrl_SelectedIndexChanged);
-			this.cboVideoRateCtrl.DropDownClosed += new System.EventHandler(this.cboVideoRateCtrl_DropDownClosed);
-			// 
-			// grpVideoBasic
-			// 
-			this.grpVideoBasic.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.grpVideoBasic.Controls.Add(this.cboVideoPixFmt);
-			this.grpVideoBasic.Controls.Add(this.lblVideoPixFmt);
-			this.grpVideoBasic.Controls.Add(this.cboVideoTune);
-			this.grpVideoBasic.Controls.Add(this.lblVideoTune);
-			this.grpVideoBasic.Controls.Add(this.cboVideoPreset);
-			this.grpVideoBasic.Controls.Add(this.lblVideoPreset);
-			this.grpVideoBasic.Location = new System.Drawing.Point(6, 6);
-			this.grpVideoBasic.Name = "grpVideoBasic";
-			this.grpVideoBasic.Size = new System.Drawing.Size(596, 100);
-			this.grpVideoBasic.TabIndex = 0;
-			this.grpVideoBasic.TabStop = false;
-			this.grpVideoBasic.Text = "{0}";
-			// 
-			// cboVideoPixFmt
-			// 
-			this.cboVideoPixFmt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cboVideoPixFmt.FormattingEnabled = true;
-			this.cboVideoPixFmt.Items.AddRange(new object[] {
+            this.grpPropInput.Controls.Add(this.txtSourceInfo);
+            this.grpPropInput.Location = new System.Drawing.Point(6, 62);
+            this.grpPropInput.Name = "grpPropInput";
+            this.grpPropInput.Size = new System.Drawing.Size(656, 206);
+            this.grpPropInput.TabIndex = 0;
+            this.grpPropInput.TabStop = false;
+            this.grpPropInput.Text = "&Source Info";
+            // 
+            // txtSourceInfo
+            // 
+            this.txtSourceInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSourceInfo.Font = new System.Drawing.Font("Lucida Console", 9F);
+            this.txtSourceInfo.Location = new System.Drawing.Point(3, 16);
+            this.txtSourceInfo.Multiline = true;
+            this.txtSourceInfo.Name = "txtSourceInfo";
+            this.txtSourceInfo.ReadOnly = true;
+            this.txtSourceInfo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtSourceInfo.Size = new System.Drawing.Size(650, 187);
+            this.txtSourceInfo.TabIndex = 0;
+            this.txtSourceInfo.WordWrap = false;
+            // 
+            // tabVideo
+            // 
+            this.tabVideo.Controls.Add(this.chkVideoDeinterlace);
+            this.tabVideo.Controls.Add(this.grpVideoDeInterlace);
+            this.tabVideo.Controls.Add(this.grpVideoCodec);
+            this.tabVideo.Controls.Add(this.grpVideoQuality);
+            this.tabVideo.Location = new System.Drawing.Point(4, 22);
+            this.tabVideo.Name = "tabVideo";
+            this.tabVideo.Padding = new System.Windows.Forms.Padding(3);
+            this.tabVideo.Size = new System.Drawing.Size(668, 274);
+            this.tabVideo.TabIndex = 1;
+            this.tabVideo.Text = "Video";
+            this.tabVideo.UseVisualStyleBackColor = true;
+            // 
+            // chkVideoDeinterlace
+            // 
+            this.chkVideoDeinterlace.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.chkVideoDeinterlace.AutoSize = true;
+            this.chkVideoDeinterlace.Location = new System.Drawing.Point(13, 139);
+            this.chkVideoDeinterlace.Name = "chkVideoDeinterlace";
+            this.chkVideoDeinterlace.Size = new System.Drawing.Size(86, 17);
+            this.chkVideoDeinterlace.TabIndex = 1;
+            this.chkVideoDeinterlace.Text = "&Deinterlaced";
+            this.chkVideoDeinterlace.UseVisualStyleBackColor = true;
+            this.chkVideoDeinterlace.CheckedChanged += new System.EventHandler(this.chkVideoDeinterlace_CheckedChanged);
+            // 
+            // grpVideoDeInterlace
+            // 
+            this.grpVideoDeInterlace.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpVideoDeInterlace.Controls.Add(this.cboVideoDiField);
+            this.grpVideoDeInterlace.Controls.Add(this.lblVideoDiField);
+            this.grpVideoDeInterlace.Controls.Add(this.cboVideoDiMode);
+            this.grpVideoDeInterlace.Controls.Add(this.lblVideoDiMode);
+            this.grpVideoDeInterlace.Location = new System.Drawing.Point(6, 140);
+            this.grpVideoDeInterlace.Name = "grpVideoDeInterlace";
+            this.grpVideoDeInterlace.Size = new System.Drawing.Size(325, 128);
+            this.grpVideoDeInterlace.TabIndex = 2;
+            this.grpVideoDeInterlace.TabStop = false;
+            // 
+            // cboVideoDiField
+            // 
+            this.cboVideoDiField.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cboVideoDiField.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboVideoDiField.FormattingEnabled = true;
+            this.cboVideoDiField.Items.AddRange(new object[] {
+            "Top Field First",
+            "Bottom Field First"});
+            this.cboVideoDiField.Location = new System.Drawing.Point(40, 82);
+            this.cboVideoDiField.Name = "cboVideoDiField";
+            this.cboVideoDiField.Size = new System.Drawing.Size(248, 21);
+            this.cboVideoDiField.TabIndex = 3;
+            this.cboVideoDiField.SelectedIndexChanged += new System.EventHandler(this.cboVideoDiField_SelectedIndexChanged);
+            // 
+            // lblVideoDiField
+            // 
+            this.lblVideoDiField.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblVideoDiField.AutoSize = true;
+            this.lblVideoDiField.Location = new System.Drawing.Point(37, 66);
+            this.lblVideoDiField.Name = "lblVideoDiField";
+            this.lblVideoDiField.Size = new System.Drawing.Size(33, 13);
+            this.lblVideoDiField.TabIndex = 2;
+            this.lblVideoDiField.Text = "&Field:";
+            // 
+            // cboVideoDiMode
+            // 
+            this.cboVideoDiMode.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cboVideoDiMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboVideoDiMode.FormattingEnabled = true;
+            this.cboVideoDiMode.Items.AddRange(new object[] {
+            "Deinterlace only frame",
+            "Deinterlace each field",
+            "Skips spatial interlacing frame check",
+            "Skips spatial interlacing field check"});
+            this.cboVideoDiMode.Location = new System.Drawing.Point(40, 42);
+            this.cboVideoDiMode.Name = "cboVideoDiMode";
+            this.cboVideoDiMode.Size = new System.Drawing.Size(248, 21);
+            this.cboVideoDiMode.TabIndex = 1;
+            this.cboVideoDiMode.SelectedIndexChanged += new System.EventHandler(this.cboVideoDiMode_SelectedIndexChanged);
+            // 
+            // lblVideoDiMode
+            // 
+            this.lblVideoDiMode.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblVideoDiMode.AutoSize = true;
+            this.lblVideoDiMode.Location = new System.Drawing.Point(37, 26);
+            this.lblVideoDiMode.Name = "lblVideoDiMode";
+            this.lblVideoDiMode.Size = new System.Drawing.Size(37, 13);
+            this.lblVideoDiMode.TabIndex = 0;
+            this.lblVideoDiMode.Text = "&Mode:";
+            // 
+            // grpVideoCodec
+            // 
+            this.grpVideoCodec.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpVideoCodec.Controls.Add(this.btnVideoArgEdit);
+            this.grpVideoCodec.Controls.Add(this.nudVideoMultipass);
+            this.grpVideoCodec.Controls.Add(this.lblVideoMultipass);
+            this.grpVideoCodec.Controls.Add(this.lblVideoRateFactor);
+            this.grpVideoCodec.Controls.Add(this.nudVideoRateFactor);
+            this.grpVideoCodec.Controls.Add(this.lblVideoRateControl);
+            this.grpVideoCodec.Controls.Add(this.cboVideoTune);
+            this.grpVideoCodec.Controls.Add(this.lblVideoTune);
+            this.grpVideoCodec.Controls.Add(this.cboVideoPreset);
+            this.grpVideoCodec.Controls.Add(this.lblVideoPreset);
+            this.grpVideoCodec.Controls.Add(this.cboVideoEncodingType);
+            this.grpVideoCodec.Controls.Add(this.cboVideoEncoder);
+            this.grpVideoCodec.Controls.Add(this.lblVideoEncoder);
+            this.grpVideoCodec.Location = new System.Drawing.Point(337, 6);
+            this.grpVideoCodec.Name = "grpVideoCodec";
+            this.grpVideoCodec.Size = new System.Drawing.Size(325, 262);
+            this.grpVideoCodec.TabIndex = 3;
+            this.grpVideoCodec.TabStop = false;
+            this.grpVideoCodec.Text = "&Codec";
+            // 
+            // btnVideoArgEdit
+            // 
+            this.btnVideoArgEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnVideoArgEdit.Location = new System.Drawing.Point(12, 196);
+            this.btnVideoArgEdit.Name = "btnVideoArgEdit";
+            this.btnVideoArgEdit.Size = new System.Drawing.Size(300, 32);
+            this.btnVideoArgEdit.TabIndex = 12;
+            this.btnVideoArgEdit.Text = "Edit encoder command-&line";
+            this.btnVideoArgEdit.UseVisualStyleBackColor = true;
+            this.btnVideoArgEdit.Click += new System.EventHandler(this.btnVideoArgEdit_Click);
+            // 
+            // nudVideoMultipass
+            // 
+            this.nudVideoMultipass.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.nudVideoMultipass.Location = new System.Drawing.Point(165, 170);
+            this.nudVideoMultipass.Name = "nudVideoMultipass";
+            this.nudVideoMultipass.Size = new System.Drawing.Size(147, 20);
+            this.nudVideoMultipass.TabIndex = 11;
+            this.nudVideoMultipass.ValueChanged += new System.EventHandler(this.nudVideoMultipass_ValueChanged);
+            // 
+            // lblVideoMultipass
+            // 
+            this.lblVideoMultipass.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblVideoMultipass.AutoSize = true;
+            this.lblVideoMultipass.Location = new System.Drawing.Point(162, 154);
+            this.lblVideoMultipass.Name = "lblVideoMultipass";
+            this.lblVideoMultipass.Size = new System.Drawing.Size(55, 13);
+            this.lblVideoMultipass.TabIndex = 10;
+            this.lblVideoMultipass.Text = "&Multipass:";
+            // 
+            // lblVideoRateFactor
+            // 
+            this.lblVideoRateFactor.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblVideoRateFactor.AutoSize = true;
+            this.lblVideoRateFactor.Location = new System.Drawing.Point(9, 154);
+            this.lblVideoRateFactor.Name = "lblVideoRateFactor";
+            this.lblVideoRateFactor.Size = new System.Drawing.Size(63, 13);
+            this.lblVideoRateFactor.TabIndex = 8;
+            this.lblVideoRateFactor.Text = "Rate&factor:";
+            // 
+            // nudVideoRateFactor
+            // 
+            this.nudVideoRateFactor.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.nudVideoRateFactor.Increment = new decimal(new int[] {
+            1024,
+            0,
+            0,
+            0});
+            this.nudVideoRateFactor.Location = new System.Drawing.Point(12, 170);
+            this.nudVideoRateFactor.Maximum = new decimal(new int[] {
+            10485760,
+            0,
+            0,
+            0});
+            this.nudVideoRateFactor.Name = "nudVideoRateFactor";
+            this.nudVideoRateFactor.Size = new System.Drawing.Size(147, 20);
+            this.nudVideoRateFactor.TabIndex = 9;
+            this.nudVideoRateFactor.ValueChanged += new System.EventHandler(this.nudVideoRateFactor_ValueChanged);
+            // 
+            // lblVideoRateControl
+            // 
+            this.lblVideoRateControl.AutoSize = true;
+            this.lblVideoRateControl.Location = new System.Drawing.Point(9, 114);
+            this.lblVideoRateControl.Name = "lblVideoRateControl";
+            this.lblVideoRateControl.Size = new System.Drawing.Size(70, 13);
+            this.lblVideoRateControl.TabIndex = 6;
+            this.lblVideoRateControl.Text = "&Rate control:";
+            // 
+            // cboVideoTune
+            // 
+            this.cboVideoTune.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cboVideoTune.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboVideoTune.FormattingEnabled = true;
+            this.cboVideoTune.Location = new System.Drawing.Point(165, 90);
+            this.cboVideoTune.Name = "cboVideoTune";
+            this.cboVideoTune.Size = new System.Drawing.Size(147, 21);
+            this.cboVideoTune.TabIndex = 5;
+            this.cboVideoTune.SelectedIndexChanged += new System.EventHandler(this.cboVideoTune_SelectedIndexChanged);
+            // 
+            // lblVideoTune
+            // 
+            this.lblVideoTune.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblVideoTune.AutoSize = true;
+            this.lblVideoTune.Location = new System.Drawing.Point(162, 74);
+            this.lblVideoTune.Name = "lblVideoTune";
+            this.lblVideoTune.Size = new System.Drawing.Size(35, 13);
+            this.lblVideoTune.TabIndex = 4;
+            this.lblVideoTune.Text = "&Tune:";
+            // 
+            // cboVideoPreset
+            // 
+            this.cboVideoPreset.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cboVideoPreset.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboVideoPreset.FormattingEnabled = true;
+            this.cboVideoPreset.Location = new System.Drawing.Point(12, 90);
+            this.cboVideoPreset.Name = "cboVideoPreset";
+            this.cboVideoPreset.Size = new System.Drawing.Size(147, 21);
+            this.cboVideoPreset.TabIndex = 3;
+            this.cboVideoPreset.SelectedIndexChanged += new System.EventHandler(this.cboVideoPreset_SelectedIndexChanged);
+            // 
+            // lblVideoPreset
+            // 
+            this.lblVideoPreset.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblVideoPreset.AutoSize = true;
+            this.lblVideoPreset.Location = new System.Drawing.Point(9, 74);
+            this.lblVideoPreset.Name = "lblVideoPreset";
+            this.lblVideoPreset.Size = new System.Drawing.Size(42, 13);
+            this.lblVideoPreset.TabIndex = 2;
+            this.lblVideoPreset.Text = "&Preset:";
+            // 
+            // cboVideoEncodingType
+            // 
+            this.cboVideoEncodingType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboVideoEncodingType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboVideoEncodingType.FormattingEnabled = true;
+            this.cboVideoEncodingType.Location = new System.Drawing.Point(12, 130);
+            this.cboVideoEncodingType.Name = "cboVideoEncodingType";
+            this.cboVideoEncodingType.Size = new System.Drawing.Size(300, 21);
+            this.cboVideoEncodingType.TabIndex = 7;
+            this.cboVideoEncodingType.SelectedIndexChanged += new System.EventHandler(this.cboVideoEncodingType_SelectedIndexChanged);
+            // 
+            // cboVideoEncoder
+            // 
+            this.cboVideoEncoder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboVideoEncoder.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboVideoEncoder.FormattingEnabled = true;
+            this.cboVideoEncoder.Location = new System.Drawing.Point(12, 50);
+            this.cboVideoEncoder.Name = "cboVideoEncoder";
+            this.cboVideoEncoder.Size = new System.Drawing.Size(300, 21);
+            this.cboVideoEncoder.TabIndex = 1;
+            this.cboVideoEncoder.SelectedIndexChanged += new System.EventHandler(this.cboVideoEncoder_SelectedIndexChanged);
+            // 
+            // lblVideoEncoder
+            // 
+            this.lblVideoEncoder.AutoSize = true;
+            this.lblVideoEncoder.Location = new System.Drawing.Point(9, 34);
+            this.lblVideoEncoder.Name = "lblVideoEncoder";
+            this.lblVideoEncoder.Size = new System.Drawing.Size(50, 13);
+            this.lblVideoEncoder.TabIndex = 0;
+            this.lblVideoEncoder.Text = "&Encoder:";
+            // 
+            // grpVideoQuality
+            // 
+            this.grpVideoQuality.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpVideoQuality.Controls.Add(this.cboVideoChroma);
+            this.grpVideoQuality.Controls.Add(this.lblVideoColourSpace);
+            this.grpVideoQuality.Controls.Add(this.cboVideoBitDepth);
+            this.grpVideoQuality.Controls.Add(this.lblVideoBitDepth);
+            this.grpVideoQuality.Controls.Add(this.cboVideoFrameRate);
+            this.grpVideoQuality.Controls.Add(this.lblVideoFrameRate);
+            this.grpVideoQuality.Controls.Add(this.cboVideoResolution);
+            this.grpVideoQuality.Controls.Add(this.lblVideoResolution);
+            this.grpVideoQuality.Location = new System.Drawing.Point(6, 6);
+            this.grpVideoQuality.Name = "grpVideoQuality";
+            this.grpVideoQuality.Size = new System.Drawing.Size(325, 128);
+            this.grpVideoQuality.TabIndex = 0;
+            this.grpVideoQuality.TabStop = false;
+            this.grpVideoQuality.Text = "&Quality";
+            // 
+            // cboVideoChroma
+            // 
+            this.cboVideoChroma.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cboVideoChroma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboVideoChroma.FormattingEnabled = true;
+            this.cboVideoChroma.Items.AddRange(new object[] {
             "420",
             "422",
             "444"});
-			this.cboVideoPixFmt.Location = new System.Drawing.Point(366, 48);
-			this.cboVideoPixFmt.Name = "cboVideoPixFmt";
-			this.cboVideoPixFmt.Size = new System.Drawing.Size(121, 21);
-			this.cboVideoPixFmt.TabIndex = 4;
-			this.cboVideoPixFmt.DropDownClosed += new System.EventHandler(this.cboVideoPixFmt_DropDownClosed);
-			// 
-			// lblVideoPixFmt
-			// 
-			this.lblVideoPixFmt.AutoSize = true;
-			this.lblVideoPixFmt.Location = new System.Drawing.Point(363, 32);
-			this.lblVideoPixFmt.Name = "lblVideoPixFmt";
-			this.lblVideoPixFmt.Size = new System.Drawing.Size(30, 13);
-			this.lblVideoPixFmt.TabIndex = 3;
-			this.lblVideoPixFmt.Text = "YUV:";
-			// 
-			// cboVideoTune
-			// 
-			this.cboVideoTune.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cboVideoTune.FormattingEnabled = true;
-			this.cboVideoTune.Items.AddRange(new object[] {
-            "off",
-            "psnr",
-            "ssim",
-            "grain",
-            "zerolatency",
-            "fastdecode"});
-			this.cboVideoTune.Location = new System.Drawing.Point(239, 48);
-			this.cboVideoTune.Name = "cboVideoTune";
-			this.cboVideoTune.Size = new System.Drawing.Size(121, 21);
-			this.cboVideoTune.TabIndex = 2;
-			this.cboVideoTune.DropDownClosed += new System.EventHandler(this.cboVideoTune_DropDownClosed);
-			// 
-			// lblVideoTune
-			// 
-			this.lblVideoTune.AutoSize = true;
-			this.lblVideoTune.Location = new System.Drawing.Point(236, 32);
-			this.lblVideoTune.Name = "lblVideoTune";
-			this.lblVideoTune.Size = new System.Drawing.Size(27, 13);
-			this.lblVideoTune.TabIndex = 0;
-			this.lblVideoTune.Text = "{0}:";
-			// 
-			// cboVideoPreset
-			// 
-			this.cboVideoPreset.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cboVideoPreset.FormattingEnabled = true;
-			this.cboVideoPreset.Items.AddRange(new object[] {
-            "ultrafast",
-            "superfast",
-            "veryfast",
-            "faster",
-            "fast",
-            "medium",
-            "slow",
-            "slower",
-            "veryslow",
-            "placebo"});
-			this.cboVideoPreset.Location = new System.Drawing.Point(112, 48);
-			this.cboVideoPreset.Name = "cboVideoPreset";
-			this.cboVideoPreset.Size = new System.Drawing.Size(121, 21);
-			this.cboVideoPreset.TabIndex = 1;
-			this.cboVideoPreset.DropDownClosed += new System.EventHandler(this.cboVideoPreset_DropDownClosed);
-			// 
-			// lblVideoPreset
-			// 
-			this.lblVideoPreset.AutoSize = true;
-			this.lblVideoPreset.Location = new System.Drawing.Point(109, 32);
-			this.lblVideoPreset.Name = "lblVideoPreset";
-			this.lblVideoPreset.Size = new System.Drawing.Size(27, 13);
-			this.lblVideoPreset.TabIndex = 0;
-			this.lblVideoPreset.Text = "{0}:";
-			// 
-			// tabAudio
-			// 
-			this.tabAudio.Controls.Add(this.txtAudioCmd);
-			this.tabAudio.Controls.Add(this.lblAudioCmdAdv);
-			this.tabAudio.Controls.Add(this.grpAudioMode);
-			this.tabAudio.Controls.Add(this.grpAudioQuality);
-			this.tabAudio.Controls.Add(this.grpAudioFormat);
-			this.tabAudio.Location = new System.Drawing.Point(4, 22);
-			this.tabAudio.Name = "tabAudio";
-			this.tabAudio.Padding = new System.Windows.Forms.Padding(3);
-			this.tabAudio.Size = new System.Drawing.Size(608, 343);
-			this.tabAudio.TabIndex = 2;
-			this.tabAudio.Text = "{0}";
-			this.tabAudio.UseVisualStyleBackColor = true;
-			// 
-			// txtAudioCmd
-			// 
-			this.txtAudioCmd.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.txtAudioCmd.Location = new System.Drawing.Point(6, 316);
-			this.txtAudioCmd.Name = "txtAudioCmd";
-			this.txtAudioCmd.Size = new System.Drawing.Size(596, 20);
-			this.txtAudioCmd.TabIndex = 6;
-			// 
-			// lblAudioCmdAdv
-			// 
-			this.lblAudioCmdAdv.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.lblAudioCmdAdv.AutoSize = true;
-			this.lblAudioCmdAdv.Location = new System.Drawing.Point(6, 300);
-			this.lblAudioCmdAdv.Name = "lblAudioCmdAdv";
-			this.lblAudioCmdAdv.Size = new System.Drawing.Size(27, 13);
-			this.lblAudioCmdAdv.TabIndex = 0;
-			this.lblAudioCmdAdv.Text = "{0}:";
-			// 
-			// grpAudioMode
-			// 
-			this.grpAudioMode.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.grpAudioMode.Controls.Add(this.cboAudioMode);
-			this.grpAudioMode.Location = new System.Drawing.Point(6, 198);
-			this.grpAudioMode.Name = "grpAudioMode";
-			this.grpAudioMode.Size = new System.Drawing.Size(596, 90);
-			this.grpAudioMode.TabIndex = 0;
-			this.grpAudioMode.TabStop = false;
-			this.grpAudioMode.Text = "{0}";
-			// 
-			// cboAudioMode
-			// 
-			this.cboAudioMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cboAudioMode.FormattingEnabled = true;
-			this.cboAudioMode.Location = new System.Drawing.Point(111, 35);
-			this.cboAudioMode.Name = "cboAudioMode";
-			this.cboAudioMode.Size = new System.Drawing.Size(375, 21);
-			this.cboAudioMode.TabIndex = 5;
-			this.cboAudioMode.DropDownClosed += new System.EventHandler(this.cboAudioMode_DropDownClosed);
-			// 
-			// grpAudioQuality
-			// 
-			this.grpAudioQuality.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.grpAudioQuality.Controls.Add(this.lblAudioChan);
-			this.grpAudioQuality.Controls.Add(this.cboAudioChan);
-			this.grpAudioQuality.Controls.Add(this.lblAudioFreq);
-			this.grpAudioQuality.Controls.Add(this.cboAudioFreq);
-			this.grpAudioQuality.Controls.Add(this.cboAudioBitRate);
-			this.grpAudioQuality.Controls.Add(this.lblAudioBitRate);
-			this.grpAudioQuality.Location = new System.Drawing.Point(6, 102);
-			this.grpAudioQuality.Name = "grpAudioQuality";
-			this.grpAudioQuality.Size = new System.Drawing.Size(596, 90);
-			this.grpAudioQuality.TabIndex = 0;
-			this.grpAudioQuality.TabStop = false;
-			this.grpAudioQuality.Text = "{0}";
-			// 
-			// lblAudioChan
-			// 
-			this.lblAudioChan.AutoSize = true;
-			this.lblAudioChan.Location = new System.Drawing.Point(364, 27);
-			this.lblAudioChan.Name = "lblAudioChan";
-			this.lblAudioChan.Size = new System.Drawing.Size(27, 13);
-			this.lblAudioChan.TabIndex = 0;
-			this.lblAudioChan.Text = "{0}:";
-			// 
-			// cboAudioChan
-			// 
-			this.cboAudioChan.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.cboAudioChan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cboAudioChan.FormattingEnabled = true;
-			this.cboAudioChan.Items.AddRange(new object[] {
-            "Automatic",
-            "Mono",
-            "Stereo"});
-			this.cboAudioChan.Location = new System.Drawing.Point(365, 43);
-			this.cboAudioChan.Name = "cboAudioChan";
-			this.cboAudioChan.Size = new System.Drawing.Size(121, 21);
-			this.cboAudioChan.TabIndex = 4;
-			this.cboAudioChan.DropDownClosed += new System.EventHandler(this.cboAudioChan_DropDownClosed);
-			// 
-			// lblAudioFreq
-			// 
-			this.lblAudioFreq.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.lblAudioFreq.AutoSize = true;
-			this.lblAudioFreq.Location = new System.Drawing.Point(237, 27);
-			this.lblAudioFreq.Name = "lblAudioFreq";
-			this.lblAudioFreq.Size = new System.Drawing.Size(27, 13);
-			this.lblAudioFreq.TabIndex = 0;
-			this.lblAudioFreq.Text = "{0}:";
-			// 
-			// cboAudioFreq
-			// 
-			this.cboAudioFreq.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.cboAudioFreq.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cboAudioFreq.FormattingEnabled = true;
-			this.cboAudioFreq.Items.AddRange(new object[] {
-            "Automatic",
-            "8000",
-            "12000",
-            "16000",
-            "22050",
-            "24000",
-            "32000",
-            "44100",
-            "48000",
-            "96000",
-            "192000"});
-			this.cboAudioFreq.Location = new System.Drawing.Point(238, 43);
-			this.cboAudioFreq.Name = "cboAudioFreq";
-			this.cboAudioFreq.Size = new System.Drawing.Size(121, 21);
-			this.cboAudioFreq.TabIndex = 3;
-			this.cboAudioFreq.DropDownClosed += new System.EventHandler(this.cboAudioFreq_DropDownClosed);
-			// 
-			// cboAudioBitRate
-			// 
-			this.cboAudioBitRate.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.cboAudioBitRate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cboAudioBitRate.FormattingEnabled = true;
-			this.cboAudioBitRate.Location = new System.Drawing.Point(111, 43);
-			this.cboAudioBitRate.Name = "cboAudioBitRate";
-			this.cboAudioBitRate.Size = new System.Drawing.Size(121, 21);
-			this.cboAudioBitRate.TabIndex = 2;
-			this.cboAudioBitRate.DropDownClosed += new System.EventHandler(this.cboAudioBitRate_DropDownClosed);
-			// 
-			// lblAudioBitRate
-			// 
-			this.lblAudioBitRate.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.lblAudioBitRate.AutoSize = true;
-			this.lblAudioBitRate.Location = new System.Drawing.Point(109, 27);
-			this.lblAudioBitRate.Name = "lblAudioBitRate";
-			this.lblAudioBitRate.Size = new System.Drawing.Size(27, 13);
-			this.lblAudioBitRate.TabIndex = 0;
-			this.lblAudioBitRate.Text = "{0}:";
-			// 
-			// grpAudioFormat
-			// 
-			this.grpAudioFormat.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.grpAudioFormat.Controls.Add(this.lblAudioFInfo);
-			this.grpAudioFormat.Controls.Add(this.lblAudioFormat);
-			this.grpAudioFormat.Controls.Add(this.cboAudioFormat);
-			this.grpAudioFormat.Location = new System.Drawing.Point(6, 6);
-			this.grpAudioFormat.Name = "grpAudioFormat";
-			this.grpAudioFormat.Size = new System.Drawing.Size(596, 90);
-			this.grpAudioFormat.TabIndex = 0;
-			this.grpAudioFormat.TabStop = false;
-			this.grpAudioFormat.Text = "{0}";
-			// 
-			// lblAudioFInfo
-			// 
-			this.lblAudioFInfo.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.lblAudioFInfo.Location = new System.Drawing.Point(184, 44);
-			this.lblAudioFInfo.Name = "lblAudioFInfo";
-			this.lblAudioFInfo.Size = new System.Drawing.Size(302, 42);
-			this.lblAudioFInfo.TabIndex = 0;
-			this.lblAudioFInfo.Text = "{0}\r\n{1}\r\n{2}";
-			// 
-			// lblAudioFormat
-			// 
-			this.lblAudioFormat.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.lblAudioFormat.Location = new System.Drawing.Point(108, 44);
-			this.lblAudioFormat.Name = "lblAudioFormat";
-			this.lblAudioFormat.Size = new System.Drawing.Size(70, 42);
-			this.lblAudioFormat.TabIndex = 0;
-			this.lblAudioFormat.Text = "{0}:\r\n{1}:\r\n{2}:";
-			this.lblAudioFormat.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			// 
-			// cboAudioFormat
-			// 
-			this.cboAudioFormat.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.cboAudioFormat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cboAudioFormat.FormattingEnabled = true;
-			this.cboAudioFormat.Location = new System.Drawing.Point(111, 20);
-			this.cboAudioFormat.Name = "cboAudioFormat";
-			this.cboAudioFormat.Size = new System.Drawing.Size(375, 21);
-			this.cboAudioFormat.TabIndex = 1;
-			this.cboAudioFormat.SelectedIndexChanged += new System.EventHandler(this.cboAudioFormat_SelectedIndexChanged);
-			this.cboAudioFormat.DropDownClosed += new System.EventHandler(this.cboAudioFormat_DropDownClosed);
-			// 
-			// tabSubtitle
-			// 
-			this.tabSubtitle.Controls.Add(this.lblSubtitleNotice);
-			this.tabSubtitle.Controls.Add(this.btnSubDown);
-			this.tabSubtitle.Controls.Add(this.btnSubUp);
-			this.tabSubtitle.Controls.Add(this.chkSubEnable);
-			this.tabSubtitle.Controls.Add(this.lblSubLang);
-			this.tabSubtitle.Controls.Add(this.cboSubLang);
-			this.tabSubtitle.Controls.Add(this.btnSubClear);
-			this.tabSubtitle.Controls.Add(this.btnSubRemove);
-			this.tabSubtitle.Controls.Add(this.btnSubAdd);
-			this.tabSubtitle.Controls.Add(this.lstSubtitle);
-			this.tabSubtitle.Location = new System.Drawing.Point(4, 22);
-			this.tabSubtitle.Name = "tabSubtitle";
-			this.tabSubtitle.Padding = new System.Windows.Forms.Padding(3);
-			this.tabSubtitle.Size = new System.Drawing.Size(608, 343);
-			this.tabSubtitle.TabIndex = 3;
-			this.tabSubtitle.Text = "{0}";
-			this.tabSubtitle.UseVisualStyleBackColor = true;
-			// 
-			// lblSubtitleNotice
-			// 
-			this.lblSubtitleNotice.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.lblSubtitleNotice.Location = new System.Drawing.Point(104, 148);
-			this.lblSubtitleNotice.Name = "lblSubtitleNotice";
-			this.lblSubtitleNotice.Size = new System.Drawing.Size(400, 46);
-			this.lblSubtitleNotice.TabIndex = 0;
-			this.lblSubtitleNotice.Text = "{0}\r\n{1}";
-			this.lblSubtitleNotice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// btnSubDown
-			// 
-			this.btnSubDown.Anchor = System.Windows.Forms.AnchorStyles.Top;
-			this.btnSubDown.Image = global::ifme.Properties.Resources.go_down;
-			this.btnSubDown.Location = new System.Drawing.Point(307, 6);
-			this.btnSubDown.Name = "btnSubDown";
-			this.btnSubDown.Size = new System.Drawing.Size(24, 24);
-			this.btnSubDown.TabIndex = 6;
-			this.btnSubDown.UseVisualStyleBackColor = true;
-			this.btnSubDown.Visible = false;
-			this.btnSubDown.Click += new System.EventHandler(this.btnSubDown_Click);
-			// 
-			// btnSubUp
-			// 
-			this.btnSubUp.Anchor = System.Windows.Forms.AnchorStyles.Top;
-			this.btnSubUp.Image = global::ifme.Properties.Resources.go_up;
-			this.btnSubUp.Location = new System.Drawing.Point(277, 6);
-			this.btnSubUp.Name = "btnSubUp";
-			this.btnSubUp.Size = new System.Drawing.Size(24, 24);
-			this.btnSubUp.TabIndex = 5;
-			this.btnSubUp.UseVisualStyleBackColor = true;
-			this.btnSubUp.Visible = false;
-			this.btnSubUp.Click += new System.EventHandler(this.btnSubUp_Click);
-			// 
-			// chkSubEnable
-			// 
-			this.chkSubEnable.AutoSize = true;
-			this.chkSubEnable.Location = new System.Drawing.Point(6, 11);
-			this.chkSubEnable.Name = "chkSubEnable";
-			this.chkSubEnable.Size = new System.Drawing.Size(42, 17);
-			this.chkSubEnable.TabIndex = 1;
-			this.chkSubEnable.Text = "{0}";
-			this.chkSubEnable.UseVisualStyleBackColor = true;
-			this.chkSubEnable.CheckedChanged += new System.EventHandler(this.chkSubEnable_CheckedChanged);
-			// 
-			// lblSubLang
-			// 
-			this.lblSubLang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.lblSubLang.AutoSize = true;
-			this.lblSubLang.Location = new System.Drawing.Point(6, 319);
-			this.lblSubLang.Name = "lblSubLang";
-			this.lblSubLang.Size = new System.Drawing.Size(27, 13);
-			this.lblSubLang.TabIndex = 0;
-			this.lblSubLang.Text = "{0}:";
-			this.lblSubLang.Visible = false;
-			// 
-			// cboSubLang
-			// 
-			this.cboSubLang.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.cboSubLang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cboSubLang.FormattingEnabled = true;
-			this.cboSubLang.Location = new System.Drawing.Point(92, 316);
-			this.cboSubLang.Name = "cboSubLang";
-			this.cboSubLang.Size = new System.Drawing.Size(510, 21);
-			this.cboSubLang.TabIndex = 8;
-			this.cboSubLang.Visible = false;
-			this.cboSubLang.SelectedIndexChanged += new System.EventHandler(this.cboSubLang_SelectedIndexChanged);
-			// 
-			// btnSubClear
-			// 
-			this.btnSubClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnSubClear.Image = global::ifme.Properties.Resources.list_clear;
-			this.btnSubClear.Location = new System.Drawing.Point(578, 6);
-			this.btnSubClear.Name = "btnSubClear";
-			this.btnSubClear.Size = new System.Drawing.Size(24, 24);
-			this.btnSubClear.TabIndex = 4;
-			this.btnSubClear.UseVisualStyleBackColor = true;
-			this.btnSubClear.Visible = false;
-			this.btnSubClear.Click += new System.EventHandler(this.btnSubClear_Click);
-			// 
-			// btnSubRemove
-			// 
-			this.btnSubRemove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnSubRemove.Image = global::ifme.Properties.Resources.list_remove;
-			this.btnSubRemove.Location = new System.Drawing.Point(548, 6);
-			this.btnSubRemove.Name = "btnSubRemove";
-			this.btnSubRemove.Size = new System.Drawing.Size(24, 24);
-			this.btnSubRemove.TabIndex = 3;
-			this.btnSubRemove.UseVisualStyleBackColor = true;
-			this.btnSubRemove.Visible = false;
-			this.btnSubRemove.Click += new System.EventHandler(this.btnSubRemove_Click);
-			// 
-			// btnSubAdd
-			// 
-			this.btnSubAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnSubAdd.Image = global::ifme.Properties.Resources.list_add;
-			this.btnSubAdd.Location = new System.Drawing.Point(518, 6);
-			this.btnSubAdd.Name = "btnSubAdd";
-			this.btnSubAdd.Size = new System.Drawing.Size(24, 24);
-			this.btnSubAdd.TabIndex = 2;
-			this.btnSubAdd.UseVisualStyleBackColor = true;
-			this.btnSubAdd.Visible = false;
-			this.btnSubAdd.Click += new System.EventHandler(this.btnSubAdd_Click);
-			// 
-			// lstSubtitle
-			// 
-			this.lstSubtitle.AllowDrop = true;
-			this.lstSubtitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.cboVideoChroma.Location = new System.Drawing.Point(167, 82);
+            this.cboVideoChroma.Name = "cboVideoChroma";
+            this.cboVideoChroma.Size = new System.Drawing.Size(121, 21);
+            this.cboVideoChroma.TabIndex = 7;
+            this.cboVideoChroma.SelectedIndexChanged += new System.EventHandler(this.cboVideoChroma_SelectedIndexChanged);
+            // 
+            // lblVideoColourSpace
+            // 
+            this.lblVideoColourSpace.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblVideoColourSpace.AutoSize = true;
+            this.lblVideoColourSpace.Location = new System.Drawing.Point(164, 66);
+            this.lblVideoColourSpace.Name = "lblVideoColourSpace";
+            this.lblVideoColourSpace.Size = new System.Drawing.Size(109, 13);
+            this.lblVideoColourSpace.TabIndex = 6;
+            this.lblVideoColourSpace.Text = "&Chroma subsampling:";
+            // 
+            // cboVideoBitDepth
+            // 
+            this.cboVideoBitDepth.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cboVideoBitDepth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboVideoBitDepth.FormattingEnabled = true;
+            this.cboVideoBitDepth.Items.AddRange(new object[] {
+            "8",
+            "10",
+            "12"});
+            this.cboVideoBitDepth.Location = new System.Drawing.Point(40, 82);
+            this.cboVideoBitDepth.Name = "cboVideoBitDepth";
+            this.cboVideoBitDepth.Size = new System.Drawing.Size(121, 21);
+            this.cboVideoBitDepth.TabIndex = 5;
+            this.cboVideoBitDepth.SelectedIndexChanged += new System.EventHandler(this.cboVideoBitDepth_SelectedIndexChanged);
+            // 
+            // lblVideoBitDepth
+            // 
+            this.lblVideoBitDepth.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblVideoBitDepth.AutoSize = true;
+            this.lblVideoBitDepth.Location = new System.Drawing.Point(37, 66);
+            this.lblVideoBitDepth.Name = "lblVideoBitDepth";
+            this.lblVideoBitDepth.Size = new System.Drawing.Size(54, 13);
+            this.lblVideoBitDepth.TabIndex = 4;
+            this.lblVideoBitDepth.Text = "Bit &depth:";
+            // 
+            // cboVideoFrameRate
+            // 
+            this.cboVideoFrameRate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cboVideoFrameRate.FormattingEnabled = true;
+            this.cboVideoFrameRate.Items.AddRange(new object[] {
+            "auto",
+            "5",
+            "10",
+            "12",
+            "15",
+            "23.976",
+            "24",
+            "25",
+            "29.97",
+            "30",
+            "48",
+            "50",
+            "59.94",
+            "60",
+            "75",
+            "100",
+            "120"});
+            this.cboVideoFrameRate.Location = new System.Drawing.Point(167, 42);
+            this.cboVideoFrameRate.Name = "cboVideoFrameRate";
+            this.cboVideoFrameRate.Size = new System.Drawing.Size(121, 21);
+            this.cboVideoFrameRate.TabIndex = 3;
+            this.cboVideoFrameRate.TextChanged += new System.EventHandler(this.cboVideoFrameRate_TextChanged);
+            this.cboVideoFrameRate.Leave += new System.EventHandler(this.cboVideoFrameRate_Leave);
+            // 
+            // lblVideoFrameRate
+            // 
+            this.lblVideoFrameRate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblVideoFrameRate.AutoSize = true;
+            this.lblVideoFrameRate.Location = new System.Drawing.Point(164, 26);
+            this.lblVideoFrameRate.Name = "lblVideoFrameRate";
+            this.lblVideoFrameRate.Size = new System.Drawing.Size(64, 13);
+            this.lblVideoFrameRate.TabIndex = 2;
+            this.lblVideoFrameRate.Text = "&Frame rate:";
+            // 
+            // cboVideoResolution
+            // 
+            this.cboVideoResolution.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cboVideoResolution.FormattingEnabled = true;
+            this.cboVideoResolution.Items.AddRange(new object[] {
+            "auto",
+            "640x480",
+            "640x360",
+            "720x404",
+            "800x600",
+            "853x480",
+            "1024x768",
+            "1024x576",
+            "1280x720",
+            "1920x1080",
+            "3840x2160",
+            "7680x4320"});
+            this.cboVideoResolution.Location = new System.Drawing.Point(40, 42);
+            this.cboVideoResolution.Name = "cboVideoResolution";
+            this.cboVideoResolution.Size = new System.Drawing.Size(121, 21);
+            this.cboVideoResolution.TabIndex = 1;
+            this.cboVideoResolution.TextChanged += new System.EventHandler(this.cboVideoResolution_TextChanged);
+            this.cboVideoResolution.Leave += new System.EventHandler(this.cboVideoResolution_Leave);
+            // 
+            // lblVideoResolution
+            // 
+            this.lblVideoResolution.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblVideoResolution.AutoSize = true;
+            this.lblVideoResolution.Location = new System.Drawing.Point(37, 26);
+            this.lblVideoResolution.Name = "lblVideoResolution";
+            this.lblVideoResolution.Size = new System.Drawing.Size(61, 13);
+            this.lblVideoResolution.TabIndex = 0;
+            this.lblVideoResolution.Text = "&Resolution:";
+            // 
+            // tabAudio
+            // 
+            this.tabAudio.Controls.Add(this.btnAudioMoveDown);
+            this.tabAudio.Controls.Add(this.btnAudioMoveUp);
+            this.tabAudio.Controls.Add(this.lblSpacer4);
+            this.tabAudio.Controls.Add(this.lstAudio);
+            this.tabAudio.Controls.Add(this.grpAudioCodec);
+            this.tabAudio.Controls.Add(this.btnAudioRemove);
+            this.tabAudio.Controls.Add(this.btnAudioAdd);
+            this.tabAudio.Location = new System.Drawing.Point(4, 22);
+            this.tabAudio.Name = "tabAudio";
+            this.tabAudio.Padding = new System.Windows.Forms.Padding(3);
+            this.tabAudio.Size = new System.Drawing.Size(668, 274);
+            this.tabAudio.TabIndex = 2;
+            this.tabAudio.Text = "Audio";
+            this.tabAudio.UseVisualStyleBackColor = true;
+            // 
+            // btnAudioMoveDown
+            // 
+            this.btnAudioMoveDown.Image = global::ifme.Properties.Resources.go_down;
+            this.btnAudioMoveDown.Location = new System.Drawing.Point(128, 6);
+            this.btnAudioMoveDown.Name = "btnAudioMoveDown";
+            this.btnAudioMoveDown.Size = new System.Drawing.Size(32, 32);
+            this.btnAudioMoveDown.TabIndex = 4;
+            this.btnAudioMoveDown.UseVisualStyleBackColor = true;
+            this.btnAudioMoveDown.Click += new System.EventHandler(this.btnAudioMoveDown_Click);
+            // 
+            // btnAudioMoveUp
+            // 
+            this.btnAudioMoveUp.Image = global::ifme.Properties.Resources.go_up;
+            this.btnAudioMoveUp.Location = new System.Drawing.Point(90, 6);
+            this.btnAudioMoveUp.Name = "btnAudioMoveUp";
+            this.btnAudioMoveUp.Size = new System.Drawing.Size(32, 32);
+            this.btnAudioMoveUp.TabIndex = 3;
+            this.btnAudioMoveUp.UseVisualStyleBackColor = true;
+            this.btnAudioMoveUp.Click += new System.EventHandler(this.btnAudioMoveUp_Click);
+            // 
+            // lblSpacer4
+            // 
+            this.lblSpacer4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblSpacer4.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblSpacer4.Location = new System.Drawing.Point(82, 6);
+            this.lblSpacer4.Name = "lblSpacer4";
+            this.lblSpacer4.Size = new System.Drawing.Size(2, 32);
+            this.lblSpacer4.TabIndex = 2;
+            // 
+            // lstAudio
+            // 
+            this.lstAudio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.lstSubtitle.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.colSubFile,
-            this.colSubExt,
-            this.colSubLang,
-            this.colSubPath});
-			this.lstSubtitle.FullRowSelect = true;
-			this.lstSubtitle.Location = new System.Drawing.Point(6, 36);
-			this.lstSubtitle.MultiSelect = false;
-			this.lstSubtitle.Name = "lstSubtitle";
-			this.lstSubtitle.Size = new System.Drawing.Size(596, 274);
-			this.lstSubtitle.TabIndex = 7;
-			this.lstSubtitle.UseCompatibleStateImageBehavior = false;
-			this.lstSubtitle.View = System.Windows.Forms.View.Details;
-			this.lstSubtitle.Visible = false;
-			this.lstSubtitle.SelectedIndexChanged += new System.EventHandler(this.lstSubtitle_SelectedIndexChanged);
-			this.lstSubtitle.DragDrop += new System.Windows.Forms.DragEventHandler(this.lstSubtitle_DragDrop);
-			this.lstSubtitle.DragEnter += new System.Windows.Forms.DragEventHandler(this.lstSubtitle_DragEnter);
-			// 
-			// colSubFile
-			// 
-			this.colSubFile.Text = "";
-			this.colSubFile.Width = 240;
-			// 
-			// colSubExt
-			// 
-			this.colSubExt.Text = "";
-			this.colSubExt.Width = 40;
-			// 
-			// colSubLang
-			// 
-			this.colSubLang.Text = "";
-			this.colSubLang.Width = 140;
-			// 
-			// colSubPath
-			// 
-			this.colSubPath.Text = "";
-			this.colSubPath.Width = 172;
-			// 
-			// tabAttachment
-			// 
-			this.tabAttachment.Controls.Add(this.lblAttachNotice);
-			this.tabAttachment.Controls.Add(this.chkAttachEnable);
-			this.tabAttachment.Controls.Add(this.txtAttachDesc);
-			this.tabAttachment.Controls.Add(this.lblAttachDesc);
-			this.tabAttachment.Controls.Add(this.lstAttachment);
-			this.tabAttachment.Controls.Add(this.btnAttachClear);
-			this.tabAttachment.Controls.Add(this.btnAttachRemove);
-			this.tabAttachment.Controls.Add(this.btnAttachAdd);
-			this.tabAttachment.Location = new System.Drawing.Point(4, 22);
-			this.tabAttachment.Name = "tabAttachment";
-			this.tabAttachment.Padding = new System.Windows.Forms.Padding(3);
-			this.tabAttachment.Size = new System.Drawing.Size(608, 343);
-			this.tabAttachment.TabIndex = 4;
-			this.tabAttachment.Text = "{0}";
-			this.tabAttachment.UseVisualStyleBackColor = true;
-			// 
-			// lblAttachNotice
-			// 
-			this.lblAttachNotice.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.lblAttachNotice.Location = new System.Drawing.Point(104, 148);
-			this.lblAttachNotice.Name = "lblAttachNotice";
-			this.lblAttachNotice.Size = new System.Drawing.Size(400, 46);
-			this.lblAttachNotice.TabIndex = 0;
-			this.lblAttachNotice.Text = "{0}\r\n{1}";
-			this.lblAttachNotice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// chkAttachEnable
-			// 
-			this.chkAttachEnable.AutoSize = true;
-			this.chkAttachEnable.Enabled = false;
-			this.chkAttachEnable.Location = new System.Drawing.Point(6, 11);
-			this.chkAttachEnable.Name = "chkAttachEnable";
-			this.chkAttachEnable.Size = new System.Drawing.Size(42, 17);
-			this.chkAttachEnable.TabIndex = 1;
-			this.chkAttachEnable.Text = "{0}";
-			this.chkAttachEnable.UseVisualStyleBackColor = true;
-			this.chkAttachEnable.CheckedChanged += new System.EventHandler(this.chkAttachEnable_CheckedChanged);
-			// 
-			// txtAttachDesc
-			// 
-			this.txtAttachDesc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.lstAudio.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.colAudioName,
+            this.colAudioId});
+            this.lstAudio.Location = new System.Drawing.Point(6, 44);
+            this.lstAudio.MultiSelect = false;
+            this.lstAudio.Name = "lstAudio";
+            this.lstAudio.Size = new System.Drawing.Size(325, 224);
+            this.lstAudio.TabIndex = 5;
+            this.lstAudio.UseCompatibleStateImageBehavior = false;
+            this.lstAudio.View = System.Windows.Forms.View.Details;
+            this.lstAudio.SelectedIndexChanged += new System.EventHandler(this.lstAudio_SelectedIndexChanged);
+            // 
+            // colAudioName
+            // 
+            this.colAudioName.Tag = "colAudioName";
+            this.colAudioName.Text = "Name";
+            this.colAudioName.Width = 160;
+            // 
+            // colAudioId
+            // 
+            this.colAudioId.Tag = "colAudioId";
+            this.colAudioId.Text = "Info";
+            this.colAudioId.Width = 160;
+            // 
+            // grpAudioCodec
+            // 
+            this.grpAudioCodec.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.txtAttachDesc.Location = new System.Drawing.Point(100, 316);
-			this.txtAttachDesc.Name = "txtAttachDesc";
-			this.txtAttachDesc.Size = new System.Drawing.Size(502, 20);
-			this.txtAttachDesc.TabIndex = 6;
-			this.txtAttachDesc.Text = "No";
-			this.txtAttachDesc.Visible = false;
-			// 
-			// lblAttachDesc
-			// 
-			this.lblAttachDesc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.lblAttachDesc.AutoSize = true;
-			this.lblAttachDesc.Location = new System.Drawing.Point(6, 319);
-			this.lblAttachDesc.Name = "lblAttachDesc";
-			this.lblAttachDesc.Size = new System.Drawing.Size(27, 13);
-			this.lblAttachDesc.TabIndex = 0;
-			this.lblAttachDesc.Text = "{0}:";
-			this.lblAttachDesc.Visible = false;
-			// 
-			// lstAttachment
-			// 
-			this.lstAttachment.AllowDrop = true;
-			this.lstAttachment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.grpAudioCodec.Controls.Add(this.lblAudioMode);
+            this.grpAudioCodec.Controls.Add(this.cboAudioMode);
+            this.grpAudioCodec.Controls.Add(this.btnAudioEditArg);
+            this.grpAudioCodec.Controls.Add(this.lblAudioEncoder);
+            this.grpAudioCodec.Controls.Add(this.lblAudioChannel);
+            this.grpAudioCodec.Controls.Add(this.cboAudioEncoder);
+            this.grpAudioCodec.Controls.Add(this.cboAudioChannel);
+            this.grpAudioCodec.Controls.Add(this.lblAudioQuality);
+            this.grpAudioCodec.Controls.Add(this.cboAudioFreq);
+            this.grpAudioCodec.Controls.Add(this.cboAudioQuality);
+            this.grpAudioCodec.Controls.Add(this.lblAudioFreq);
+            this.grpAudioCodec.Location = new System.Drawing.Point(337, 6);
+            this.grpAudioCodec.Name = "grpAudioCodec";
+            this.grpAudioCodec.Size = new System.Drawing.Size(325, 262);
+            this.grpAudioCodec.TabIndex = 6;
+            this.grpAudioCodec.TabStop = false;
+            this.grpAudioCodec.Text = "&Codec";
+            // 
+            // lblAudioMode
+            // 
+            this.lblAudioMode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAudioMode.AutoSize = true;
+            this.lblAudioMode.Location = new System.Drawing.Point(214, 74);
+            this.lblAudioMode.Name = "lblAudioMode";
+            this.lblAudioMode.Size = new System.Drawing.Size(37, 13);
+            this.lblAudioMode.TabIndex = 2;
+            this.lblAudioMode.Text = "Mode:";
+            // 
+            // cboAudioMode
+            // 
+            this.cboAudioMode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboAudioMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboAudioMode.FormattingEnabled = true;
+            this.cboAudioMode.Location = new System.Drawing.Point(217, 90);
+            this.cboAudioMode.Name = "cboAudioMode";
+            this.cboAudioMode.Size = new System.Drawing.Size(96, 21);
+            this.cboAudioMode.TabIndex = 3;
+            this.cboAudioMode.SelectedIndexChanged += new System.EventHandler(this.cboAudioMode_SelectedIndexChanged);
+            // 
+            // btnAudioEditArg
+            // 
+            this.btnAudioEditArg.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.lstAttachment.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.colAttachFile,
-            this.colAttachExt,
-            this.colAttachMime,
-            this.colAttachPath});
-			this.lstAttachment.FullRowSelect = true;
-			this.lstAttachment.Location = new System.Drawing.Point(6, 36);
-			this.lstAttachment.Name = "lstAttachment";
-			this.lstAttachment.Size = new System.Drawing.Size(596, 274);
-			this.lstAttachment.TabIndex = 5;
-			this.lstAttachment.UseCompatibleStateImageBehavior = false;
-			this.lstAttachment.View = System.Windows.Forms.View.Details;
-			this.lstAttachment.Visible = false;
-			this.lstAttachment.DragDrop += new System.Windows.Forms.DragEventHandler(this.lstAttachment_DragDrop);
-			this.lstAttachment.DragEnter += new System.Windows.Forms.DragEventHandler(this.lstAttachment_DragEnter);
-			// 
-			// colAttachFile
-			// 
-			this.colAttachFile.Text = "";
-			this.colAttachFile.Width = 240;
-			// 
-			// colAttachExt
-			// 
-			this.colAttachExt.Text = "";
-			this.colAttachExt.Width = 40;
-			// 
-			// colAttachMime
-			// 
-			this.colAttachMime.Text = "";
-			this.colAttachMime.Width = 140;
-			// 
-			// colAttachPath
-			// 
-			this.colAttachPath.Text = "";
-			this.colAttachPath.Width = 172;
-			// 
-			// btnAttachClear
-			// 
-			this.btnAttachClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnAttachClear.Image = global::ifme.Properties.Resources.list_clear;
-			this.btnAttachClear.Location = new System.Drawing.Point(578, 6);
-			this.btnAttachClear.Name = "btnAttachClear";
-			this.btnAttachClear.Size = new System.Drawing.Size(24, 24);
-			this.btnAttachClear.TabIndex = 4;
-			this.btnAttachClear.UseVisualStyleBackColor = true;
-			this.btnAttachClear.Visible = false;
-			this.btnAttachClear.Click += new System.EventHandler(this.btnAttachClear_Click);
-			// 
-			// btnAttachRemove
-			// 
-			this.btnAttachRemove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnAttachRemove.Image = global::ifme.Properties.Resources.list_remove;
-			this.btnAttachRemove.Location = new System.Drawing.Point(548, 6);
-			this.btnAttachRemove.Name = "btnAttachRemove";
-			this.btnAttachRemove.Size = new System.Drawing.Size(24, 24);
-			this.btnAttachRemove.TabIndex = 3;
-			this.btnAttachRemove.UseVisualStyleBackColor = true;
-			this.btnAttachRemove.Visible = false;
-			this.btnAttachRemove.Click += new System.EventHandler(this.btnAttachRemove_Click);
-			// 
-			// btnAttachAdd
-			// 
-			this.btnAttachAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnAttachAdd.Image = global::ifme.Properties.Resources.list_add;
-			this.btnAttachAdd.Location = new System.Drawing.Point(518, 6);
-			this.btnAttachAdd.Name = "btnAttachAdd";
-			this.btnAttachAdd.Size = new System.Drawing.Size(24, 24);
-			this.btnAttachAdd.TabIndex = 2;
-			this.btnAttachAdd.UseVisualStyleBackColor = true;
-			this.btnAttachAdd.Visible = false;
-			this.btnAttachAdd.Click += new System.EventHandler(this.btnAttachAdd_Click);
-			// 
-			// tabStatus
-			// 
-			this.tabStatus.Controls.Add(this.rtfLog);
-			this.tabStatus.Location = new System.Drawing.Point(4, 22);
-			this.tabStatus.Name = "tabStatus";
-			this.tabStatus.Padding = new System.Windows.Forms.Padding(3);
-			this.tabStatus.Size = new System.Drawing.Size(608, 343);
-			this.tabStatus.TabIndex = 6;
-			this.tabStatus.Text = "{0}";
-			this.tabStatus.UseVisualStyleBackColor = true;
-			// 
-			// rtfLog
-			// 
-			this.rtfLog.BackColor = System.Drawing.Color.Black;
-			this.rtfLog.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.rtfLog.Font = new System.Drawing.Font("Lucida Console", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.rtfLog.ForeColor = System.Drawing.Color.LightGray;
-			this.rtfLog.HideSelection = false;
-			this.rtfLog.Location = new System.Drawing.Point(3, 3);
-			this.rtfLog.Name = "rtfLog";
-			this.rtfLog.ReadOnly = true;
-			this.rtfLog.Size = new System.Drawing.Size(602, 337);
-			this.rtfLog.TabIndex = 2;
-			this.rtfLog.Text = "";
-			this.rtfLog.KeyUp += new System.Windows.Forms.KeyEventHandler(this.rtfLog_KeyUp);
-			// 
-			// btnResume
-			// 
-			this.btnResume.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnResume.Enabled = false;
-			this.btnResume.Location = new System.Drawing.Point(422, 445);
-			this.btnResume.Name = "btnResume";
-			this.btnResume.Size = new System.Drawing.Size(100, 23);
-			this.btnResume.TabIndex = 38;
-			this.btnResume.Text = "{0}";
-			this.btnResume.UseVisualStyleBackColor = true;
-			this.btnResume.Click += new System.EventHandler(this.btnResume_Click);
-			// 
-			// BGThread
-			// 
-			this.BGThread.WorkerSupportsCancellation = true;
-			this.BGThread.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BGThread_DoWork);
-			this.BGThread.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.BGThread_RunWorkerCompleted);
-			// 
-			// proTip
-			// 
-			this.proTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-			// 
-			// pictBannerMain
-			// 
-			this.pictBannerMain.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnAudioEditArg.Location = new System.Drawing.Point(13, 157);
+            this.btnAudioEditArg.Name = "btnAudioEditArg";
+            this.btnAudioEditArg.Size = new System.Drawing.Size(300, 32);
+            this.btnAudioEditArg.TabIndex = 10;
+            this.btnAudioEditArg.Text = "Edit encoder command-&line";
+            this.btnAudioEditArg.UseVisualStyleBackColor = true;
+            this.btnAudioEditArg.Click += new System.EventHandler(this.btnAudioEditArg_Click);
+            // 
+            // lblAudioEncoder
+            // 
+            this.lblAudioEncoder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblAudioEncoder.AutoSize = true;
+            this.lblAudioEncoder.Location = new System.Drawing.Point(10, 74);
+            this.lblAudioEncoder.Name = "lblAudioEncoder";
+            this.lblAudioEncoder.Size = new System.Drawing.Size(50, 13);
+            this.lblAudioEncoder.TabIndex = 0;
+            this.lblAudioEncoder.Text = "&Encoder:";
+            // 
+            // lblAudioChannel
+            // 
+            this.lblAudioChannel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblAudioChannel.AutoSize = true;
+            this.lblAudioChannel.Location = new System.Drawing.Point(214, 114);
+            this.lblAudioChannel.Name = "lblAudioChannel";
+            this.lblAudioChannel.Size = new System.Drawing.Size(50, 13);
+            this.lblAudioChannel.TabIndex = 8;
+            this.lblAudioChannel.Text = "&Channel:";
+            // 
+            // cboAudioEncoder
+            // 
+            this.cboAudioEncoder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.pictBannerMain.BackColor = System.Drawing.Color.Black;
-			this.pictBannerMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.pictBannerMain.Location = new System.Drawing.Point(0, 0);
-			this.pictBannerMain.Name = "pictBannerMain";
-			this.pictBannerMain.Size = new System.Drawing.Size(640, 64);
-			this.pictBannerMain.TabIndex = 39;
-			this.pictBannerMain.TabStop = false;
-			// 
-			// pictBannerRight
-			// 
-			this.pictBannerRight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.pictBannerRight.BackColor = System.Drawing.Color.Transparent;
-			this.pictBannerRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.pictBannerRight.Location = new System.Drawing.Point(0, 0);
-			this.pictBannerRight.Name = "pictBannerRight";
-			this.pictBannerRight.Size = new System.Drawing.Size(640, 64);
-			this.pictBannerRight.TabIndex = 40;
-			this.pictBannerRight.TabStop = false;
-			// 
-			// pictDonate
-			// 
-			this.pictDonate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.pictDonate.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.pictDonate.Image = global::ifme.Properties.Resources.btn_donate_SM;
-			this.pictDonate.Location = new System.Drawing.Point(224, 446);
-			this.pictDonate.Name = "pictDonate";
-			this.pictDonate.Size = new System.Drawing.Size(74, 21);
-			this.pictDonate.TabIndex = 41;
-			this.pictDonate.TabStop = false;
-			this.pictDonate.Click += new System.EventHandler(this.pictDonate_Click);
-			// 
-			// frmMain
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-			this.ClientSize = new System.Drawing.Size(640, 480);
-			this.Controls.Add(this.pictDonate);
-			this.Controls.Add(this.pictBannerRight);
-			this.Controls.Add(this.pictBannerMain);
-			this.Controls.Add(this.btnOptions);
-			this.Controls.Add(this.btnAbout);
-			this.Controls.Add(this.btnStart);
-			this.Controls.Add(this.tabEncoding);
-			this.Controls.Add(this.btnResume);
-			this.DoubleBuffered = true;
-			this.Font = new System.Drawing.Font("Tahoma", 8F);
-			this.MinimumSize = new System.Drawing.Size(656, 518);
-			this.Name = "frmMain";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
-			this.Load += new System.EventHandler(this.frmMain_Load);
-			this.Shown += new System.EventHandler(this.frmMain_Shown);
-			this.SizeChanged += new System.EventHandler(this.frmMain_SizeChanged);
-			this.tabEncoding.ResumeLayout(false);
-			this.tabQueue.ResumeLayout(false);
-			this.tabQueue.PerformLayout();
-			this.tabUserPreset.ResumeLayout(false);
-			this.tabVideo.ResumeLayout(false);
-			this.tabVideo.PerformLayout();
-			this.grpVideoRateCtrl.ResumeLayout(false);
-			this.grpVideoRateCtrl.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.trkVideoRate)).EndInit();
-			this.grpVideoBasic.ResumeLayout(false);
-			this.grpVideoBasic.PerformLayout();
-			this.tabAudio.ResumeLayout(false);
-			this.tabAudio.PerformLayout();
-			this.grpAudioMode.ResumeLayout(false);
-			this.grpAudioQuality.ResumeLayout(false);
-			this.grpAudioQuality.PerformLayout();
-			this.grpAudioFormat.ResumeLayout(false);
-			this.tabSubtitle.ResumeLayout(false);
-			this.tabSubtitle.PerformLayout();
-			this.tabAttachment.ResumeLayout(false);
-			this.tabAttachment.PerformLayout();
-			this.tabStatus.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pictBannerMain)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictBannerRight)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictDonate)).EndInit();
-			this.ResumeLayout(false);
+            this.cboAudioEncoder.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboAudioEncoder.FormattingEnabled = true;
+            this.cboAudioEncoder.Location = new System.Drawing.Point(13, 90);
+            this.cboAudioEncoder.Name = "cboAudioEncoder";
+            this.cboAudioEncoder.Size = new System.Drawing.Size(198, 21);
+            this.cboAudioEncoder.TabIndex = 1;
+            this.cboAudioEncoder.SelectedIndexChanged += new System.EventHandler(this.cboAudioEncoder_SelectedIndexChanged);
+            // 
+            // cboAudioChannel
+            // 
+            this.cboAudioChannel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.cboAudioChannel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboAudioChannel.FormattingEnabled = true;
+            this.cboAudioChannel.Location = new System.Drawing.Point(217, 130);
+            this.cboAudioChannel.Name = "cboAudioChannel";
+            this.cboAudioChannel.Size = new System.Drawing.Size(96, 21);
+            this.cboAudioChannel.TabIndex = 9;
+            this.cboAudioChannel.SelectedIndexChanged += new System.EventHandler(this.cboAudioChannel_SelectedIndexChanged);
+            // 
+            // lblAudioQuality
+            // 
+            this.lblAudioQuality.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblAudioQuality.AutoSize = true;
+            this.lblAudioQuality.Location = new System.Drawing.Point(10, 114);
+            this.lblAudioQuality.Name = "lblAudioQuality";
+            this.lblAudioQuality.Size = new System.Drawing.Size(45, 13);
+            this.lblAudioQuality.TabIndex = 4;
+            this.lblAudioQuality.Text = "&Quality:";
+            // 
+            // cboAudioFreq
+            // 
+            this.cboAudioFreq.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.cboAudioFreq.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboAudioFreq.FormattingEnabled = true;
+            this.cboAudioFreq.Location = new System.Drawing.Point(115, 130);
+            this.cboAudioFreq.Name = "cboAudioFreq";
+            this.cboAudioFreq.Size = new System.Drawing.Size(96, 21);
+            this.cboAudioFreq.TabIndex = 7;
+            this.cboAudioFreq.SelectedIndexChanged += new System.EventHandler(this.cboAudioFreq_SelectedIndexChanged);
+            // 
+            // cboAudioQuality
+            // 
+            this.cboAudioQuality.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.cboAudioQuality.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboAudioQuality.FormattingEnabled = true;
+            this.cboAudioQuality.Location = new System.Drawing.Point(13, 130);
+            this.cboAudioQuality.Name = "cboAudioQuality";
+            this.cboAudioQuality.Size = new System.Drawing.Size(96, 21);
+            this.cboAudioQuality.TabIndex = 5;
+            this.cboAudioQuality.SelectedIndexChanged += new System.EventHandler(this.cboAudioQuality_SelectedIndexChanged);
+            // 
+            // lblAudioFreq
+            // 
+            this.lblAudioFreq.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblAudioFreq.AutoSize = true;
+            this.lblAudioFreq.Location = new System.Drawing.Point(112, 114);
+            this.lblAudioFreq.Name = "lblAudioFreq";
+            this.lblAudioFreq.Size = new System.Drawing.Size(62, 13);
+            this.lblAudioFreq.TabIndex = 6;
+            this.lblAudioFreq.Text = "&Frequency:";
+            // 
+            // btnAudioRemove
+            // 
+            this.btnAudioRemove.Image = global::ifme.Properties.Resources.list_remove;
+            this.btnAudioRemove.Location = new System.Drawing.Point(44, 6);
+            this.btnAudioRemove.Name = "btnAudioRemove";
+            this.btnAudioRemove.Size = new System.Drawing.Size(32, 32);
+            this.btnAudioRemove.TabIndex = 1;
+            this.btnAudioRemove.UseVisualStyleBackColor = true;
+            this.btnAudioRemove.Click += new System.EventHandler(this.btnAudioRemove_Click);
+            // 
+            // btnAudioAdd
+            // 
+            this.btnAudioAdd.Image = global::ifme.Properties.Resources.list_add;
+            this.btnAudioAdd.Location = new System.Drawing.Point(6, 6);
+            this.btnAudioAdd.Name = "btnAudioAdd";
+            this.btnAudioAdd.Size = new System.Drawing.Size(32, 32);
+            this.btnAudioAdd.TabIndex = 0;
+            this.btnAudioAdd.UseVisualStyleBackColor = true;
+            this.btnAudioAdd.Click += new System.EventHandler(this.btnAudioAdd_Click);
+            // 
+            // tabSubtitle
+            // 
+            this.tabSubtitle.Controls.Add(this.cboSubLang);
+            this.tabSubtitle.Controls.Add(this.lstSub);
+            this.tabSubtitle.Controls.Add(this.lblSpacer5);
+            this.tabSubtitle.Controls.Add(this.btnSubMoveDown);
+            this.tabSubtitle.Controls.Add(this.btnSubMoveUp);
+            this.tabSubtitle.Controls.Add(this.btnSubRemove);
+            this.tabSubtitle.Controls.Add(this.btnSubAdd);
+            this.tabSubtitle.Location = new System.Drawing.Point(4, 22);
+            this.tabSubtitle.Name = "tabSubtitle";
+            this.tabSubtitle.Padding = new System.Windows.Forms.Padding(3);
+            this.tabSubtitle.Size = new System.Drawing.Size(668, 274);
+            this.tabSubtitle.TabIndex = 3;
+            this.tabSubtitle.Text = "Subtitle";
+            this.tabSubtitle.UseVisualStyleBackColor = true;
+            // 
+            // cboSubLang
+            // 
+            this.cboSubLang.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboSubLang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboSubLang.FormattingEnabled = true;
+            this.cboSubLang.Location = new System.Drawing.Point(6, 247);
+            this.cboSubLang.Name = "cboSubLang";
+            this.cboSubLang.Size = new System.Drawing.Size(656, 21);
+            this.cboSubLang.TabIndex = 7;
+            this.cboSubLang.SelectedIndexChanged += new System.EventHandler(this.cboSubLang_SelectedIndexChanged);
+            // 
+            // lstSub
+            // 
+            this.lstSub.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lstSub.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.colSubId,
+            this.colSubName,
+            this.colSubLang});
+            this.lstSub.Location = new System.Drawing.Point(6, 44);
+            this.lstSub.Name = "lstSub";
+            this.lstSub.Size = new System.Drawing.Size(656, 197);
+            this.lstSub.TabIndex = 6;
+            this.lstSub.UseCompatibleStateImageBehavior = false;
+            this.lstSub.View = System.Windows.Forms.View.Details;
+            this.lstSub.SelectedIndexChanged += new System.EventHandler(this.lstSub_SelectedIndexChanged);
+            // 
+            // colSubId
+            // 
+            this.colSubId.Tag = "colSubId";
+            this.colSubId.Text = "Id";
+            this.colSubId.Width = 35;
+            // 
+            // colSubName
+            // 
+            this.colSubName.Tag = "colSubName";
+            this.colSubName.Text = "Name";
+            this.colSubName.Width = 300;
+            // 
+            // colSubLang
+            // 
+            this.colSubLang.Tag = "colSubLang";
+            this.colSubLang.Text = "Language";
+            this.colSubLang.Width = 300;
+            // 
+            // lblSpacer5
+            // 
+            this.lblSpacer5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblSpacer5.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblSpacer5.Location = new System.Drawing.Point(82, 6);
+            this.lblSpacer5.Name = "lblSpacer5";
+            this.lblSpacer5.Size = new System.Drawing.Size(2, 32);
+            this.lblSpacer5.TabIndex = 3;
+            // 
+            // btnSubMoveDown
+            // 
+            this.btnSubMoveDown.Image = global::ifme.Properties.Resources.go_down;
+            this.btnSubMoveDown.Location = new System.Drawing.Point(128, 6);
+            this.btnSubMoveDown.Name = "btnSubMoveDown";
+            this.btnSubMoveDown.Size = new System.Drawing.Size(32, 32);
+            this.btnSubMoveDown.TabIndex = 5;
+            this.btnSubMoveDown.UseVisualStyleBackColor = true;
+            this.btnSubMoveDown.Click += new System.EventHandler(this.btnSubMoveDown_Click);
+            // 
+            // btnSubMoveUp
+            // 
+            this.btnSubMoveUp.Image = global::ifme.Properties.Resources.go_up;
+            this.btnSubMoveUp.Location = new System.Drawing.Point(90, 6);
+            this.btnSubMoveUp.Name = "btnSubMoveUp";
+            this.btnSubMoveUp.Size = new System.Drawing.Size(32, 32);
+            this.btnSubMoveUp.TabIndex = 4;
+            this.btnSubMoveUp.UseVisualStyleBackColor = true;
+            this.btnSubMoveUp.Click += new System.EventHandler(this.btnSubMoveUp_Click);
+            // 
+            // btnSubRemove
+            // 
+            this.btnSubRemove.Image = global::ifme.Properties.Resources.list_remove;
+            this.btnSubRemove.Location = new System.Drawing.Point(44, 6);
+            this.btnSubRemove.Name = "btnSubRemove";
+            this.btnSubRemove.Size = new System.Drawing.Size(32, 32);
+            this.btnSubRemove.TabIndex = 1;
+            this.btnSubRemove.UseVisualStyleBackColor = true;
+            this.btnSubRemove.Click += new System.EventHandler(this.btnSubRemove_Click);
+            // 
+            // btnSubAdd
+            // 
+            this.btnSubAdd.Image = global::ifme.Properties.Resources.list_add;
+            this.btnSubAdd.Location = new System.Drawing.Point(6, 6);
+            this.btnSubAdd.Name = "btnSubAdd";
+            this.btnSubAdd.Size = new System.Drawing.Size(32, 32);
+            this.btnSubAdd.TabIndex = 0;
+            this.btnSubAdd.UseVisualStyleBackColor = true;
+            this.btnSubAdd.Click += new System.EventHandler(this.btnSubAdd_Click);
+            // 
+            // tabAttachment
+            // 
+            this.tabAttachment.Controls.Add(this.lstAttach);
+            this.tabAttachment.Controls.Add(this.btnAttachDel);
+            this.tabAttachment.Controls.Add(this.btnAttachAdd);
+            this.tabAttachment.Location = new System.Drawing.Point(4, 22);
+            this.tabAttachment.Name = "tabAttachment";
+            this.tabAttachment.Padding = new System.Windows.Forms.Padding(3);
+            this.tabAttachment.Size = new System.Drawing.Size(668, 274);
+            this.tabAttachment.TabIndex = 4;
+            this.tabAttachment.Text = "Attachment";
+            this.tabAttachment.UseVisualStyleBackColor = true;
+            // 
+            // lstAttach
+            // 
+            this.lstAttach.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lstAttach.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.colAttachName,
+            this.colAttachMime});
+            this.lstAttach.Location = new System.Drawing.Point(6, 44);
+            this.lstAttach.Name = "lstAttach";
+            this.lstAttach.Size = new System.Drawing.Size(656, 224);
+            this.lstAttach.TabIndex = 3;
+            this.lstAttach.UseCompatibleStateImageBehavior = false;
+            this.lstAttach.View = System.Windows.Forms.View.Details;
+            this.lstAttach.SelectedIndexChanged += new System.EventHandler(this.lstAttach_SelectedIndexChanged);
+            // 
+            // colAttachName
+            // 
+            this.colAttachName.Tag = "colAttachName";
+            this.colAttachName.Text = "Name";
+            this.colAttachName.Width = 325;
+            // 
+            // colAttachMime
+            // 
+            this.colAttachMime.Tag = "colAttachMime";
+            this.colAttachMime.Text = "MIME";
+            this.colAttachMime.Width = 325;
+            // 
+            // btnAttachDel
+            // 
+            this.btnAttachDel.Image = global::ifme.Properties.Resources.list_remove;
+            this.btnAttachDel.Location = new System.Drawing.Point(44, 6);
+            this.btnAttachDel.Name = "btnAttachDel";
+            this.btnAttachDel.Size = new System.Drawing.Size(32, 32);
+            this.btnAttachDel.TabIndex = 2;
+            this.btnAttachDel.UseVisualStyleBackColor = true;
+            this.btnAttachDel.Click += new System.EventHandler(this.btnAttachDel_Click);
+            // 
+            // btnAttachAdd
+            // 
+            this.btnAttachAdd.Image = global::ifme.Properties.Resources.list_add;
+            this.btnAttachAdd.Location = new System.Drawing.Point(6, 6);
+            this.btnAttachAdd.Name = "btnAttachAdd";
+            this.btnAttachAdd.Size = new System.Drawing.Size(32, 32);
+            this.btnAttachAdd.TabIndex = 1;
+            this.btnAttachAdd.UseVisualStyleBackColor = true;
+            this.btnAttachAdd.Click += new System.EventHandler(this.btnAttachAdd_Click);
+            // 
+            // lblProfile
+            // 
+            this.lblProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblProfile.Location = new System.Drawing.Point(12, 634);
+            this.lblProfile.Name = "lblProfile";
+            this.lblProfile.Size = new System.Drawing.Size(130, 24);
+            this.lblProfile.TabIndex = 13;
+            this.lblProfile.Text = "Encoding Pro&file:";
+            this.lblProfile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // cboProfile
+            // 
+            this.cboProfile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboProfile.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboProfile.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.cboProfile.FormattingEnabled = true;
+            this.cboProfile.Location = new System.Drawing.Point(148, 634);
+            this.cboProfile.Name = "cboProfile";
+            this.cboProfile.Size = new System.Drawing.Size(480, 24);
+            this.cboProfile.TabIndex = 14;
+            this.cboProfile.SelectedIndexChanged += new System.EventHandler(this.cboProfile_SelectedIndexChanged);
+            // 
+            // btnProfileSave
+            // 
+            this.btnProfileSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnProfileSave.Location = new System.Drawing.Point(634, 634);
+            this.btnProfileSave.Name = "btnProfileSave";
+            this.btnProfileSave.Size = new System.Drawing.Size(24, 24);
+            this.btnProfileSave.TabIndex = 15;
+            this.btnProfileSave.UseVisualStyleBackColor = true;
+            this.btnProfileSave.Click += new System.EventHandler(this.btnProfileSave_Click);
+            // 
+            // btnProfileDelete
+            // 
+            this.btnProfileDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnProfileDelete.Location = new System.Drawing.Point(664, 634);
+            this.btnProfileDelete.Name = "btnProfileDelete";
+            this.btnProfileDelete.Size = new System.Drawing.Size(24, 24);
+            this.btnProfileDelete.TabIndex = 16;
+            this.btnProfileDelete.UseVisualStyleBackColor = true;
+            this.btnProfileDelete.Click += new System.EventHandler(this.btnProfileDelete_Click);
+            // 
+            // chkOutput
+            // 
+            this.chkOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.chkOutput.Location = new System.Drawing.Point(12, 664);
+            this.chkOutput.Name = "chkOutput";
+            this.chkOutput.Size = new System.Drawing.Size(130, 24);
+            this.chkOutput.TabIndex = 17;
+            this.chkOutput.Text = "&Output:";
+            this.chkOutput.UseVisualStyleBackColor = true;
+            // 
+            // txtOutputFolder
+            // 
+            this.txtOutputFolder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtOutputFolder.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.txtOutputFolder.Location = new System.Drawing.Point(148, 664);
+            this.txtOutputFolder.Name = "txtOutputFolder";
+            this.txtOutputFolder.Size = new System.Drawing.Size(510, 24);
+            this.txtOutputFolder.TabIndex = 18;
+            this.txtOutputFolder.TextChanged += new System.EventHandler(this.txtOutputFolder_TextChanged);
+            // 
+            // btnBrowseOutput
+            // 
+            this.btnBrowseOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBrowseOutput.Location = new System.Drawing.Point(664, 664);
+            this.btnBrowseOutput.Name = "btnBrowseOutput";
+            this.btnBrowseOutput.Size = new System.Drawing.Size(24, 24);
+            this.btnBrowseOutput.TabIndex = 19;
+            this.btnBrowseOutput.UseVisualStyleBackColor = true;
+            this.btnBrowseOutput.Click += new System.EventHandler(this.btnBrowseOutput_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.pbxBanner);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(700, 64);
+            this.panel1.TabIndex = 0;
+            // 
+            // pbxBanner
+            // 
+            this.pbxBanner.BackColor = System.Drawing.Color.Transparent;
+            this.pbxBanner.BackgroundImage = global::ifme.Properties.Resources.BannerLeft;
+            this.pbxBanner.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbxBanner.Location = new System.Drawing.Point(0, 0);
+            this.pbxBanner.Name = "pbxBanner";
+            this.pbxBanner.Size = new System.Drawing.Size(640, 64);
+            this.pbxBanner.TabIndex = 0;
+            this.pbxBanner.TabStop = false;
+            // 
+            // btnQueueAdd
+            // 
+            this.btnQueueAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnQueueAdd.Image = global::ifme.Properties.Resources.list_add;
+            this.btnQueueAdd.Location = new System.Drawing.Point(412, 70);
+            this.btnQueueAdd.Name = "btnQueueAdd";
+            this.btnQueueAdd.Size = new System.Drawing.Size(32, 32);
+            this.btnQueueAdd.TabIndex = 9;
+            this.btnQueueAdd.UseVisualStyleBackColor = true;
+            this.btnQueueAdd.Click += new System.EventHandler(this.btnQueueAdd_Click);
+            // 
+            // btnQueueRemove
+            // 
+            this.btnQueueRemove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnQueueRemove.Image = global::ifme.Properties.Resources.list_remove;
+            this.btnQueueRemove.Location = new System.Drawing.Point(450, 70);
+            this.btnQueueRemove.Name = "btnQueueRemove";
+            this.btnQueueRemove.Size = new System.Drawing.Size(32, 32);
+            this.btnQueueRemove.TabIndex = 8;
+            this.btnQueueRemove.UseVisualStyleBackColor = true;
+            this.btnQueueRemove.Click += new System.EventHandler(this.btnQueueRemove_Click);
+            // 
+            // btnQueueMoveUp
+            // 
+            this.btnQueueMoveUp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnQueueMoveUp.Image = global::ifme.Properties.Resources.go_up;
+            this.btnQueueMoveUp.Location = new System.Drawing.Point(496, 70);
+            this.btnQueueMoveUp.Name = "btnQueueMoveUp";
+            this.btnQueueMoveUp.Size = new System.Drawing.Size(32, 32);
+            this.btnQueueMoveUp.TabIndex = 6;
+            this.btnQueueMoveUp.UseVisualStyleBackColor = true;
+            this.btnQueueMoveUp.Click += new System.EventHandler(this.btnQueueMoveUp_Click);
+            // 
+            // btnQueueMoveDown
+            // 
+            this.btnQueueMoveDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnQueueMoveDown.Image = global::ifme.Properties.Resources.go_down;
+            this.btnQueueMoveDown.Location = new System.Drawing.Point(534, 70);
+            this.btnQueueMoveDown.Name = "btnQueueMoveDown";
+            this.btnQueueMoveDown.Size = new System.Drawing.Size(32, 32);
+            this.btnQueueMoveDown.TabIndex = 5;
+            this.btnQueueMoveDown.UseVisualStyleBackColor = true;
+            this.btnQueueMoveDown.Click += new System.EventHandler(this.btnQueueMoveDown_Click);
+            // 
+            // btnQueueStop
+            // 
+            this.btnQueueStop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnQueueStop.Image = global::ifme.Properties.Resources.media_playback_stop;
+            this.btnQueueStop.Location = new System.Drawing.Point(580, 70);
+            this.btnQueueStop.Name = "btnQueueStop";
+            this.btnQueueStop.Size = new System.Drawing.Size(32, 32);
+            this.btnQueueStop.TabIndex = 3;
+            this.btnQueueStop.UseVisualStyleBackColor = true;
+            this.btnQueueStop.Click += new System.EventHandler(this.btnQueueStop_Click);
+            // 
+            // btnQueuePause
+            // 
+            this.btnQueuePause.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnQueuePause.Image = global::ifme.Properties.Resources.media_playback_pause;
+            this.btnQueuePause.Location = new System.Drawing.Point(618, 70);
+            this.btnQueuePause.Name = "btnQueuePause";
+            this.btnQueuePause.Size = new System.Drawing.Size(32, 32);
+            this.btnQueuePause.TabIndex = 2;
+            this.btnQueuePause.UseVisualStyleBackColor = true;
+            this.btnQueuePause.Click += new System.EventHandler(this.btnQueuePause_Click);
+            // 
+            // btnQueueStart
+            // 
+            this.btnQueueStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnQueueStart.Image = global::ifme.Properties.Resources.media_playback_start;
+            this.btnQueueStart.Location = new System.Drawing.Point(656, 70);
+            this.btnQueueStart.Name = "btnQueueStart";
+            this.btnQueueStart.Size = new System.Drawing.Size(32, 32);
+            this.btnQueueStart.TabIndex = 1;
+            this.btnQueueStart.UseVisualStyleBackColor = true;
+            this.btnQueueStart.Click += new System.EventHandler(this.btnQueueStart_Click);
+            // 
+            // frmMain
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(700, 700);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnBrowseOutput);
+            this.Controls.Add(this.txtOutputFolder);
+            this.Controls.Add(this.lstQueue);
+            this.Controls.Add(this.chkOutput);
+            this.Controls.Add(this.btnProfileDelete);
+            this.Controls.Add(this.btnProfileSave);
+            this.Controls.Add(this.cboProfile);
+            this.Controls.Add(this.lblProfile);
+            this.Controls.Add(this.tabProp);
+            this.Controls.Add(this.btnQueueAdd);
+            this.Controls.Add(this.btnQueueRemove);
+            this.Controls.Add(this.lblSpacer2);
+            this.Controls.Add(this.btnQueueMoveUp);
+            this.Controls.Add(this.btnQueueMoveDown);
+            this.Controls.Add(this.lblSpacer1);
+            this.Controls.Add(this.btnQueueStop);
+            this.Controls.Add(this.btnQueuePause);
+            this.Controls.Add(this.btnQueueStart);
+            this.Controls.Add(this.chkDonePowerOff);
+            this.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Internet Friendly Media Encoder";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
+            this.Load += new System.EventHandler(this.frmMain_Load);
+            this.Shown += new System.EventHandler(this.frmMain_Shown);
+            this.cmsQueue.ResumeLayout(false);
+            this.tabProp.ResumeLayout(false);
+            this.tabInfo.ResumeLayout(false);
+            this.grpPropFormat.ResumeLayout(false);
+            this.grpPropFormat.PerformLayout();
+            this.grpPropInput.ResumeLayout(false);
+            this.grpPropInput.PerformLayout();
+            this.tabVideo.ResumeLayout(false);
+            this.tabVideo.PerformLayout();
+            this.grpVideoDeInterlace.ResumeLayout(false);
+            this.grpVideoDeInterlace.PerformLayout();
+            this.grpVideoCodec.ResumeLayout(false);
+            this.grpVideoCodec.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVideoMultipass)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVideoRateFactor)).EndInit();
+            this.grpVideoQuality.ResumeLayout(false);
+            this.grpVideoQuality.PerformLayout();
+            this.tabAudio.ResumeLayout(false);
+            this.grpAudioCodec.ResumeLayout(false);
+            this.grpAudioCodec.PerformLayout();
+            this.tabSubtitle.ResumeLayout(false);
+            this.tabAttachment.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBanner)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
-		}
+        }
 
-		#endregion
-
-		private System.Windows.Forms.Button btnOptions;
-		private System.Windows.Forms.Button btnAbout;
-		private System.Windows.Forms.Button btnStart;
-		private System.Windows.Forms.TabControl tabEncoding;
-		private System.Windows.Forms.TabPage tabQueue;
-		private System.Windows.Forms.Button btnQueueBrowseDest;
-		private System.Windows.Forms.TextBox txtDestDir;
-		private System.Windows.Forms.CheckBox chkQueueSaveTo;
-		private System.Windows.Forms.Button btnQueueDown;
-		private System.Windows.Forms.Button btnQueueUp;
-		private System.Windows.Forms.Button btnQueueClear;
-		private System.Windows.Forms.Button btnQueueRemove;
-		private System.Windows.Forms.Button btnQueueAdd;
-		private System.Windows.Forms.ListView lstQueue;
-		private System.Windows.Forms.ColumnHeader colQueueFName;
-		private System.Windows.Forms.ColumnHeader colQueueExt;
-		private System.Windows.Forms.ColumnHeader colQueueCodec;
-		private System.Windows.Forms.ColumnHeader colQueueRes;
-		private System.Windows.Forms.ColumnHeader colQueueBitDepth;
-		private System.Windows.Forms.ColumnHeader colQueuePath;
-		private System.Windows.Forms.TabPage tabVideo;
-		private System.Windows.Forms.TextBox txtVideoAdvCmd;
-		private System.Windows.Forms.Label lblVideoAdvCmd;
-		private System.Windows.Forms.GroupBox grpVideoRateCtrl;
-		private System.Windows.Forms.Label lblVideoRateFL;
-		private System.Windows.Forms.Label lblVideoRateFH;
-		private System.Windows.Forms.TrackBar trkVideoRate;
-		private System.Windows.Forms.TextBox txtVideoRate;
-		private System.Windows.Forms.Label lblVideoRateFactor;
-		private System.Windows.Forms.ComboBox cboVideoRateCtrl;
-		private System.Windows.Forms.GroupBox grpVideoBasic;
-		private System.Windows.Forms.ComboBox cboVideoTune;
-		private System.Windows.Forms.Label lblVideoTune;
-		private System.Windows.Forms.ComboBox cboVideoPreset;
-		private System.Windows.Forms.Label lblVideoPreset;
-		private System.Windows.Forms.TabPage tabAudio;
-		private System.Windows.Forms.TextBox txtAudioCmd;
-		private System.Windows.Forms.Label lblAudioCmdAdv;
-		private System.Windows.Forms.GroupBox grpAudioMode;
-		private System.Windows.Forms.ComboBox cboAudioMode;
-		private System.Windows.Forms.GroupBox grpAudioQuality;
-		private System.Windows.Forms.Label lblAudioChan;
-		private System.Windows.Forms.ComboBox cboAudioChan;
-		private System.Windows.Forms.Label lblAudioFreq;
-		private System.Windows.Forms.ComboBox cboAudioFreq;
-		private System.Windows.Forms.ComboBox cboAudioBitRate;
-		private System.Windows.Forms.Label lblAudioBitRate;
-		private System.Windows.Forms.GroupBox grpAudioFormat;
-		private System.Windows.Forms.Label lblAudioFInfo;
-		private System.Windows.Forms.Label lblAudioFormat;
-		private System.Windows.Forms.ComboBox cboAudioFormat;
-		private System.Windows.Forms.TabPage tabSubtitle;
-		private System.Windows.Forms.Label lblSubtitleNotice;
-		private System.Windows.Forms.Button btnSubDown;
-		private System.Windows.Forms.Button btnSubUp;
-		private System.Windows.Forms.CheckBox chkSubEnable;
-		private System.Windows.Forms.Label lblSubLang;
-		private System.Windows.Forms.ComboBox cboSubLang;
-		private System.Windows.Forms.Button btnSubClear;
-		private System.Windows.Forms.Button btnSubRemove;
-		private System.Windows.Forms.Button btnSubAdd;
-		private System.Windows.Forms.ListView lstSubtitle;
-		private System.Windows.Forms.ColumnHeader colSubFile;
-		private System.Windows.Forms.ColumnHeader colSubExt;
-		private System.Windows.Forms.ColumnHeader colSubLang;
-		private System.Windows.Forms.ColumnHeader colSubPath;
-		private System.Windows.Forms.TabPage tabAttachment;
-		private System.Windows.Forms.Label lblAttachNotice;
-		private System.Windows.Forms.CheckBox chkAttachEnable;
-		private System.Windows.Forms.TextBox txtAttachDesc;
-		private System.Windows.Forms.Label lblAttachDesc;
-		private System.Windows.Forms.ListView lstAttachment;
-		private System.Windows.Forms.ColumnHeader colAttachFile;
-		private System.Windows.Forms.ColumnHeader colAttachExt;
-		private System.Windows.Forms.ColumnHeader colAttachMime;
-		private System.Windows.Forms.ColumnHeader colAttachPath;
-		private System.Windows.Forms.Button btnAttachClear;
-		private System.Windows.Forms.Button btnAttachRemove;
-		private System.Windows.Forms.Button btnAttachAdd;
-		private System.Windows.Forms.Button btnResume;
-		private System.ComponentModel.BackgroundWorker BGThread;
-		private System.Windows.Forms.ToolTip proTip;
-		private System.Windows.Forms.ColumnHeader colQueueFPS;
-		private System.Windows.Forms.TabPage tabStatus;
-		private System.Windows.Forms.RichTextBox rtfLog;
-		private System.Windows.Forms.PictureBox pictBannerMain;
-		private System.Windows.Forms.PictureBox pictBannerRight;
-		private System.Windows.Forms.CheckBox chkDoneOffMachine;
-		private System.Windows.Forms.PictureBox pictDonate;
-		private System.Windows.Forms.Button btnAdvanceHelp;
-		private System.Windows.Forms.Button btnEdit;
-		private System.Windows.Forms.Button btnPreview;
-		private System.Windows.Forms.TabPage tabUserPreset;
-		private System.Windows.Forms.Label lblUserPreData;
-		private System.Windows.Forms.Label lblUserPreLabel;
-		private System.Windows.Forms.ComboBox cboUserPreList;
-		private System.Windows.Forms.Button btnUserPreSave;
-		private System.Windows.Forms.Button btnUserPreAdd;
-		private System.Windows.Forms.Button btnUserPreDelete;
-		private System.Windows.Forms.Panel pnlNagisan;
-		private System.Windows.Forms.Button btnQueueEditScript;
-		private System.Windows.Forms.Button btnQueueGenerate;
-		private System.Windows.Forms.Button btnQueueGenImgSeq;
-		private System.Windows.Forms.ComboBox cboVideoPixFmt;
-		private System.Windows.Forms.Label lblVideoPixFmt;
-	}
+        #endregion
+        private System.Windows.Forms.CheckBox chkDonePowerOff;
+        private System.Windows.Forms.Button btnQueueStart;
+        private System.Windows.Forms.Button btnQueuePause;
+        private System.Windows.Forms.Button btnQueueStop;
+        private System.Windows.Forms.Label lblSpacer1;
+        private System.Windows.Forms.Button btnQueueMoveDown;
+        private System.Windows.Forms.Button btnQueueMoveUp;
+        private System.Windows.Forms.Label lblSpacer2;
+        private System.Windows.Forms.Button btnQueueRemove;
+        private System.Windows.Forms.Button btnQueueAdd;
+        private System.Windows.Forms.ListView lstQueue;
+        private System.Windows.Forms.ColumnHeader colQueueName;
+        private System.Windows.Forms.ColumnHeader colQueueDuration;
+        private System.Windows.Forms.ColumnHeader colQueueStatus;
+        private System.Windows.Forms.TabControl tabProp;
+        private System.Windows.Forms.TabPage tabInfo;
+        private System.Windows.Forms.TabPage tabVideo;
+        private System.Windows.Forms.Label lblProfile;
+        private System.Windows.Forms.ComboBox cboProfile;
+        private System.Windows.Forms.Button btnProfileSave;
+        private System.Windows.Forms.Button btnProfileDelete;
+        private System.Windows.Forms.CheckBox chkOutput;
+        private System.Windows.Forms.TextBox txtOutputFolder;
+        private System.Windows.Forms.Button btnBrowseOutput;
+        private System.Windows.Forms.TabPage tabAudio;
+        private System.Windows.Forms.TabPage tabSubtitle;
+        private System.Windows.Forms.TabPage tabAttachment;
+        private System.Windows.Forms.GroupBox grpVideoCodec;
+        private System.Windows.Forms.GroupBox grpVideoQuality;
+        private System.Windows.Forms.ComboBox cboVideoChroma;
+        private System.Windows.Forms.Label lblVideoColourSpace;
+        private System.Windows.Forms.ComboBox cboVideoBitDepth;
+        private System.Windows.Forms.Label lblVideoBitDepth;
+        private System.Windows.Forms.ComboBox cboVideoFrameRate;
+        private System.Windows.Forms.Label lblVideoFrameRate;
+        private System.Windows.Forms.ComboBox cboVideoResolution;
+        private System.Windows.Forms.Label lblVideoResolution;
+        private System.Windows.Forms.ComboBox cboVideoEncoder;
+        private System.Windows.Forms.Label lblVideoEncoder;
+        private System.Windows.Forms.ComboBox cboVideoEncodingType;
+        private System.Windows.Forms.Label lblVideoPreset;
+        private System.Windows.Forms.ComboBox cboVideoTune;
+        private System.Windows.Forms.Label lblVideoTune;
+        private System.Windows.Forms.ComboBox cboVideoPreset;
+        private System.Windows.Forms.NumericUpDown nudVideoMultipass;
+        private System.Windows.Forms.Label lblVideoMultipass;
+        private System.Windows.Forms.Label lblVideoRateFactor;
+        private System.Windows.Forms.NumericUpDown nudVideoRateFactor;
+        private System.Windows.Forms.Label lblVideoRateControl;
+        private System.Windows.Forms.GroupBox grpVideoDeInterlace;
+        private System.Windows.Forms.ComboBox cboVideoDiField;
+        private System.Windows.Forms.Label lblVideoDiField;
+        private System.Windows.Forms.ComboBox cboVideoDiMode;
+        private System.Windows.Forms.Label lblVideoDiMode;
+        private System.Windows.Forms.CheckBox chkVideoDeinterlace;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pbxBanner;
+        private System.Windows.Forms.Label lblAudioEncoder;
+        private System.Windows.Forms.ComboBox cboAudioEncoder;
+        private System.Windows.Forms.Label lblAudioFreq;
+        private System.Windows.Forms.ComboBox cboAudioQuality;
+        private System.Windows.Forms.Label lblAudioQuality;
+        private System.Windows.Forms.Label lblAudioChannel;
+        private System.Windows.Forms.ComboBox cboAudioChannel;
+        private System.Windows.Forms.ComboBox cboAudioFreq;
+        private System.Windows.Forms.Button btnVideoArgEdit;
+        private System.Windows.Forms.GroupBox grpAudioCodec;
+        private System.Windows.Forms.Button btnAudioEditArg;
+        private System.Windows.Forms.Button btnAudioRemove;
+        private System.Windows.Forms.Button btnAudioAdd;
+        private System.Windows.Forms.ListView lstAudio;
+        private System.Windows.Forms.ColumnHeader colAudioId;
+        private System.Windows.Forms.Label lblSpacer4;
+        private System.Windows.Forms.Button btnAudioMoveDown;
+        private System.Windows.Forms.Button btnAudioMoveUp;
+        private System.Windows.Forms.ComboBox cboAudioMode;
+        private System.Windows.Forms.Label lblAudioMode;
+        private System.Windows.Forms.Button btnSubRemove;
+        private System.Windows.Forms.Button btnSubAdd;
+        private System.Windows.Forms.Button btnSubMoveDown;
+        private System.Windows.Forms.Button btnSubMoveUp;
+        private System.Windows.Forms.Label lblSpacer5;
+        private System.Windows.Forms.ComboBox cboSubLang;
+        private System.Windows.Forms.ListView lstSub;
+        private System.Windows.Forms.ColumnHeader colSubId;
+        private System.Windows.Forms.ColumnHeader colSubName;
+        private System.Windows.Forms.ColumnHeader colSubLang;
+        private System.Windows.Forms.Button btnAttachDel;
+        private System.Windows.Forms.Button btnAttachAdd;
+        private System.Windows.Forms.ListView lstAttach;
+        private System.Windows.Forms.ColumnHeader colAttachName;
+        private System.Windows.Forms.ColumnHeader colAttachMime;
+        private System.Windows.Forms.GroupBox grpPropInput;
+        private System.Windows.Forms.GroupBox grpPropFormat;
+        private System.Windows.Forms.RadioButton rdoMKV;
+        private System.Windows.Forms.RadioButton rdoMP4;
+        private System.Windows.Forms.ContextMenuStrip cmsQueue;
+        private System.Windows.Forms.ToolStripMenuItem tsmiQueueNew;
+        private System.Windows.Forms.ToolStripMenuItem tsmiQueueOpen;
+        private System.Windows.Forms.ToolStripMenuItem tsmiQueueSave;
+        private System.Windows.Forms.ToolStripMenuItem tsmiQueueSaveAs;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem tsmiQueueDel;
+        private System.Windows.Forms.ToolStripMenuItem tsmiQueueSelectAll;
+        private System.Windows.Forms.ToolStripMenuItem tsmiQueueSelectNone;
+        private System.Windows.Forms.ToolStripMenuItem tsmiQueueSelectInvert;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem tsmiAviSynth;
+        private System.Windows.Forms.ToolStripMenuItem tsmiQueueAviSynthEdit;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem tsmiQueueAviSynthConvertTo;
+        private System.Windows.Forms.TextBox txtSourceInfo;
+        private System.Windows.Forms.ColumnHeader colAudioName;
+        private System.Windows.Forms.ColumnHeader colQueueTarget;
+    }
 }
+
